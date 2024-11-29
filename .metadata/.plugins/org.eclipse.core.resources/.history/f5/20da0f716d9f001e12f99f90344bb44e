@@ -1,0 +1,1316 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.Callback_instances;
+import ROS2DataModelMM.Callback_objects;
+import ROS2DataModelMM.Callback_symbols;
+import ROS2DataModelMM.Clients;
+import ROS2DataModelMM.Contexts;
+import ROS2DataModelMM.Nodes;
+import ROS2DataModelMM.Publish_instances;
+import ROS2DataModelMM.Publishers;
+import ROS2DataModelMM.ROS2DataModelMMFactory;
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+import ROS2DataModelMM.Services;
+import ROS2DataModelMM.Subscription_objects;
+import ROS2DataModelMM.Subscriptions;
+import ROS2DataModelMM.TimerNode_links;
+import ROS2DataModelMM.Timers;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Package</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class ROS2DataModelMMPackageImpl extends EPackageImpl implements ROS2DataModelMMPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass publishersEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass subscriptionsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass nodesEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass contextsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass subscription_objectsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass servicesEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass timersEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass clientsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass timerNode_linksEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass callback_instancesEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass publish_instancesEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass callback_objectsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass callback_symbolsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass systemEClass = null;
+
+	/**
+	 * Creates an instance of the model <b>Package</b>, registered with
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+	 * package URI value.
+	 * <p>Note: the correct way to create the package is via the static
+	 * factory method {@link #init init()}, which also performs
+	 * initialization of the package, or returns the registered package,
+	 * if one already exists.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.emf.ecore.EPackage.Registry
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#eNS_URI
+	 * @see #init()
+	 * @generated
+	 */
+	private ROS2DataModelMMPackageImpl() {
+		super(eNS_URI, ROS2DataModelMMFactory.eINSTANCE);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private static boolean isInited = false;
+
+	/**
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 *
+	 * <p>This method is used to initialize {@link ROS2DataModelMMPackage#eINSTANCE} when that field is accessed.
+	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #eNS_URI
+	 * @see #createPackageContents()
+	 * @see #initializePackageContents()
+	 * @generated
+	 */
+	public static ROS2DataModelMMPackage init() {
+		if (isInited)
+			return (ROS2DataModelMMPackage) EPackage.Registry.INSTANCE.getEPackage(ROS2DataModelMMPackage.eNS_URI);
+
+		// Obtain or create and register package
+		Object registeredROS2DataModelMMPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		ROS2DataModelMMPackageImpl theROS2DataModelMMPackage = registeredROS2DataModelMMPackage instanceof ROS2DataModelMMPackageImpl
+				? (ROS2DataModelMMPackageImpl) registeredROS2DataModelMMPackage
+				: new ROS2DataModelMMPackageImpl();
+
+		isInited = true;
+
+		// Create package meta-data objects
+		theROS2DataModelMMPackage.createPackageContents();
+
+		// Initialize created meta-data
+		theROS2DataModelMMPackage.initializePackageContents();
+
+		// Mark meta-data to indicate it can't be changed
+		theROS2DataModelMMPackage.freeze();
+
+		// Update the registry and return the package
+		EPackage.Registry.INSTANCE.put(ROS2DataModelMMPackage.eNS_URI, theROS2DataModelMMPackage);
+		return theROS2DataModelMMPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPublishers() {
+		return publishersEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPublishers_Publisher_handle() {
+		return (EAttribute) publishersEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPublishers_Timestamp() {
+		return (EAttribute) publishersEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPublishers_Node_handle() {
+		return (EAttribute) publishersEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPublishers_Rmw_handle() {
+		return (EAttribute) publishersEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPublishers_Topic_name() {
+		return (EAttribute) publishersEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPublishers_Depth() {
+		return (EAttribute) publishersEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSubscriptions() {
+		return subscriptionsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSubscriptions_Subscription_name() {
+		return (EAttribute) subscriptionsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSubscriptions_Timestamp() {
+		return (EAttribute) subscriptionsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSubscriptions_Node_handle() {
+		return (EAttribute) subscriptionsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSubscriptions_Depth() {
+		return (EAttribute) subscriptionsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSubscriptions_Rmw_handle() {
+		return (EAttribute) subscriptionsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSubscriptions_Publisher_handle() {
+		return (EAttribute) subscriptionsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNodes() {
+		return nodesEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getNodes_Node_handle() {
+		return (EAttribute) nodesEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getNodes_Timestamp() {
+		return (EAttribute) nodesEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getNodes_Tid() {
+		return (EAttribute) nodesEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getNodes_Rmw_handle() {
+		return (EAttribute) nodesEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getNodes_Name() {
+		return (EAttribute) nodesEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getContexts() {
+		return contextsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getContexts_ContextHandle() {
+		return (EAttribute) contextsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getContexts_Timestamp() {
+		return (EAttribute) contextsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getContexts_Pid() {
+		return (EAttribute) contextsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getContexts_Version() {
+		return (EAttribute) contextsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSubscription_objects() {
+		return subscription_objectsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSubscription_objects_Subscription() {
+		return (EAttribute) subscription_objectsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSubscription_objects_Timestamp() {
+		return (EAttribute) subscription_objectsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSubscription_objects_Subscription_handle() {
+		return (EAttribute) subscription_objectsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getServices() {
+		return servicesEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getServices_Service_handle() {
+		return (EAttribute) servicesEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getServices_Timestamp() {
+		return (EAttribute) servicesEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getServices_Node_handle() {
+		return (EAttribute) servicesEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getServices_Rmw_handle() {
+		return (EAttribute) servicesEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getServices_Service_name() {
+		return (EAttribute) servicesEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getTimers() {
+		return timersEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTimers_Timer_handle() {
+		return (EAttribute) timersEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTimers_Timestamp() {
+		return (EAttribute) timersEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTimers_Period() {
+		return (EAttribute) timersEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTimers_Tid() {
+		return (EAttribute) timersEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getClients() {
+		return clientsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getClients_Client_handle() {
+		return (EAttribute) clientsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getClients_Timestamp() {
+		return (EAttribute) clientsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getClients_Node_handle() {
+		return (EAttribute) clientsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getClients_Rmw_handle() {
+		return (EAttribute) clientsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getClients_Service_name() {
+		return (EAttribute) clientsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getTimerNode_links() {
+		return timerNode_linksEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTimerNode_links_Timer_handle() {
+		return (EAttribute) timerNode_linksEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTimerNode_links_Timestamp() {
+		return (EAttribute) timerNode_linksEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTimerNode_links_Node_handle() {
+		return (EAttribute) timerNode_linksEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCallback_instances() {
+		return callback_instancesEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallback_instances_Callback_object() {
+		return (EAttribute) callback_instancesEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallback_instances_Timestamp() {
+		return (EAttribute) callback_instancesEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallback_instances_Duration() {
+		return (EAttribute) callback_instancesEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallback_instances_Intra_process() {
+		return (EAttribute) callback_instancesEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPublish_instances() {
+		return publish_instancesEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPublish_instances_Publisher_handle() {
+		return (EAttribute) publish_instancesEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPublish_instances_Timestamp() {
+		return (EAttribute) publish_instancesEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPublish_instances_Message() {
+		return (EAttribute) publish_instancesEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCallback_objects() {
+		return callback_objectsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallback_objects_Reference() {
+		return (EAttribute) callback_objectsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallback_objects_Timestamp() {
+		return (EAttribute) callback_objectsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallback_objects_Callback_object() {
+		return (EAttribute) callback_objectsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCallback_symbols() {
+		return callback_symbolsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallback_symbols_Callback_object() {
+		return (EAttribute) callback_symbolsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallback_symbols_Timestamp() {
+		return (EAttribute) callback_symbolsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallback_symbols_Symbol() {
+		return (EAttribute) callback_symbolsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSystem() {
+		return systemEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Publish_instances() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Callback_instances() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Subscription_objects() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Timers() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Timernode_links() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Callback_objects() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Subscriptions() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Callback_symbols() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Services() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Publishers() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Nodes() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Contexts() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystem_Clients() {
+		return (EReference) systemEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSystem_Name() {
+		return (EAttribute) systemEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ROS2DataModelMMFactory getROS2DataModelMMFactory() {
+		return (ROS2DataModelMMFactory) getEFactoryInstance();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isCreated = false;
+
+	/**
+	 * Creates the meta-model objects for the package.  This method is
+	 * guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void createPackageContents() {
+		if (isCreated)
+			return;
+		isCreated = true;
+
+		// Create classes and their features
+		publishersEClass = createEClass(PUBLISHERS);
+		createEAttribute(publishersEClass, PUBLISHERS__PUBLISHER_HANDLE);
+		createEAttribute(publishersEClass, PUBLISHERS__TIMESTAMP);
+		createEAttribute(publishersEClass, PUBLISHERS__NODE_HANDLE);
+		createEAttribute(publishersEClass, PUBLISHERS__RMW_HANDLE);
+		createEAttribute(publishersEClass, PUBLISHERS__TOPIC_NAME);
+		createEAttribute(publishersEClass, PUBLISHERS__DEPTH);
+
+		subscriptionsEClass = createEClass(SUBSCRIPTIONS);
+		createEAttribute(subscriptionsEClass, SUBSCRIPTIONS__SUBSCRIPTION_NAME);
+		createEAttribute(subscriptionsEClass, SUBSCRIPTIONS__TIMESTAMP);
+		createEAttribute(subscriptionsEClass, SUBSCRIPTIONS__NODE_HANDLE);
+		createEAttribute(subscriptionsEClass, SUBSCRIPTIONS__DEPTH);
+		createEAttribute(subscriptionsEClass, SUBSCRIPTIONS__RMW_HANDLE);
+		createEAttribute(subscriptionsEClass, SUBSCRIPTIONS__PUBLISHER_HANDLE);
+
+		nodesEClass = createEClass(NODES);
+		createEAttribute(nodesEClass, NODES__NODE_HANDLE);
+		createEAttribute(nodesEClass, NODES__TIMESTAMP);
+		createEAttribute(nodesEClass, NODES__TID);
+		createEAttribute(nodesEClass, NODES__RMW_HANDLE);
+		createEAttribute(nodesEClass, NODES__NAME);
+
+		contextsEClass = createEClass(CONTEXTS);
+		createEAttribute(contextsEClass, CONTEXTS__CONTEXT_HANDLE);
+		createEAttribute(contextsEClass, CONTEXTS__TIMESTAMP);
+		createEAttribute(contextsEClass, CONTEXTS__PID);
+		createEAttribute(contextsEClass, CONTEXTS__VERSION);
+
+		subscription_objectsEClass = createEClass(SUBSCRIPTION_OBJECTS);
+		createEAttribute(subscription_objectsEClass, SUBSCRIPTION_OBJECTS__SUBSCRIPTION);
+		createEAttribute(subscription_objectsEClass, SUBSCRIPTION_OBJECTS__TIMESTAMP);
+		createEAttribute(subscription_objectsEClass, SUBSCRIPTION_OBJECTS__SUBSCRIPTION_HANDLE);
+
+		servicesEClass = createEClass(SERVICES);
+		createEAttribute(servicesEClass, SERVICES__SERVICE_HANDLE);
+		createEAttribute(servicesEClass, SERVICES__TIMESTAMP);
+		createEAttribute(servicesEClass, SERVICES__NODE_HANDLE);
+		createEAttribute(servicesEClass, SERVICES__RMW_HANDLE);
+		createEAttribute(servicesEClass, SERVICES__SERVICE_NAME);
+
+		timersEClass = createEClass(TIMERS);
+		createEAttribute(timersEClass, TIMERS__TIMER_HANDLE);
+		createEAttribute(timersEClass, TIMERS__TIMESTAMP);
+		createEAttribute(timersEClass, TIMERS__PERIOD);
+		createEAttribute(timersEClass, TIMERS__TID);
+
+		clientsEClass = createEClass(CLIENTS);
+		createEAttribute(clientsEClass, CLIENTS__CLIENT_HANDLE);
+		createEAttribute(clientsEClass, CLIENTS__TIMESTAMP);
+		createEAttribute(clientsEClass, CLIENTS__NODE_HANDLE);
+		createEAttribute(clientsEClass, CLIENTS__RMW_HANDLE);
+		createEAttribute(clientsEClass, CLIENTS__SERVICE_NAME);
+
+		timerNode_linksEClass = createEClass(TIMER_NODE_LINKS);
+		createEAttribute(timerNode_linksEClass, TIMER_NODE_LINKS__TIMER_HANDLE);
+		createEAttribute(timerNode_linksEClass, TIMER_NODE_LINKS__TIMESTAMP);
+		createEAttribute(timerNode_linksEClass, TIMER_NODE_LINKS__NODE_HANDLE);
+
+		callback_instancesEClass = createEClass(CALLBACK_INSTANCES);
+		createEAttribute(callback_instancesEClass, CALLBACK_INSTANCES__CALLBACK_OBJECT);
+		createEAttribute(callback_instancesEClass, CALLBACK_INSTANCES__TIMESTAMP);
+		createEAttribute(callback_instancesEClass, CALLBACK_INSTANCES__DURATION);
+		createEAttribute(callback_instancesEClass, CALLBACK_INSTANCES__INTRA_PROCESS);
+
+		publish_instancesEClass = createEClass(PUBLISH_INSTANCES);
+		createEAttribute(publish_instancesEClass, PUBLISH_INSTANCES__PUBLISHER_HANDLE);
+		createEAttribute(publish_instancesEClass, PUBLISH_INSTANCES__TIMESTAMP);
+		createEAttribute(publish_instancesEClass, PUBLISH_INSTANCES__MESSAGE);
+
+		callback_objectsEClass = createEClass(CALLBACK_OBJECTS);
+		createEAttribute(callback_objectsEClass, CALLBACK_OBJECTS__REFERENCE);
+		createEAttribute(callback_objectsEClass, CALLBACK_OBJECTS__TIMESTAMP);
+		createEAttribute(callback_objectsEClass, CALLBACK_OBJECTS__CALLBACK_OBJECT);
+
+		callback_symbolsEClass = createEClass(CALLBACK_SYMBOLS);
+		createEAttribute(callback_symbolsEClass, CALLBACK_SYMBOLS__CALLBACK_OBJECT);
+		createEAttribute(callback_symbolsEClass, CALLBACK_SYMBOLS__TIMESTAMP);
+		createEAttribute(callback_symbolsEClass, CALLBACK_SYMBOLS__SYMBOL);
+
+		systemEClass = createEClass(SYSTEM);
+		createEReference(systemEClass, SYSTEM__PUBLISH_INSTANCES);
+		createEReference(systemEClass, SYSTEM__CALLBACK_INSTANCES);
+		createEReference(systemEClass, SYSTEM__SUBSCRIPTION_OBJECTS);
+		createEReference(systemEClass, SYSTEM__TIMERS);
+		createEReference(systemEClass, SYSTEM__TIMERNODE_LINKS);
+		createEReference(systemEClass, SYSTEM__CALLBACK_OBJECTS);
+		createEReference(systemEClass, SYSTEM__SUBSCRIPTIONS);
+		createEReference(systemEClass, SYSTEM__CALLBACK_SYMBOLS);
+		createEReference(systemEClass, SYSTEM__SERVICES);
+		createEReference(systemEClass, SYSTEM__PUBLISHERS);
+		createEReference(systemEClass, SYSTEM__NODES);
+		createEReference(systemEClass, SYSTEM__CONTEXTS);
+		createEReference(systemEClass, SYSTEM__CLIENTS);
+		createEAttribute(systemEClass, SYSTEM__NAME);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isInitialized = false;
+
+	/**
+	 * Complete the initialization of the package and its meta-model.  This
+	 * method is guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void initializePackageContents() {
+		if (isInitialized)
+			return;
+		isInitialized = true;
+
+		// Initialize package
+		setName(eNAME);
+		setNsPrefix(eNS_PREFIX);
+		setNsURI(eNS_URI);
+
+		// Create type parameters
+
+		// Set bounds for type parameters
+
+		// Add supertypes to classes
+
+		// Initialize classes, features, and operations; add parameters
+		initEClass(publishersEClass, Publishers.class, "Publishers", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPublishers_Publisher_handle(), ecorePackage.getEDouble(), "publisher_handle", null, 0, 1,
+				Publishers.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublishers_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1, Publishers.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublishers_Node_handle(), ecorePackage.getEDouble(), "node_handle", null, 0, 1,
+				Publishers.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublishers_Rmw_handle(), ecorePackage.getEDouble(), "rmw_handle", null, 0, 1,
+				Publishers.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublishers_Topic_name(), ecorePackage.getEString(), "topic_name", null, 0, 1,
+				Publishers.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublishers_Depth(), ecorePackage.getEInt(), "depth", null, 0, 1, Publishers.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(subscriptionsEClass, Subscriptions.class, "Subscriptions", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSubscriptions_Subscription_name(), ecorePackage.getEString(), "subscription_name", null, 0, 1,
+				Subscriptions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSubscriptions_Timestamp(), ecorePackage.getEDouble(), "timestamp", null, 0, 1,
+				Subscriptions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSubscriptions_Node_handle(), ecorePackage.getEDouble(), "node_handle", null, 0, 1,
+				Subscriptions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSubscriptions_Depth(), ecorePackage.getEInt(), "depth", null, 0, 1, Subscriptions.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSubscriptions_Rmw_handle(), ecorePackage.getEDouble(), "rmw_handle", null, 0, 1,
+				Subscriptions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSubscriptions_Publisher_handle(), ecorePackage.getEDouble(), "publisher_handle", null, 0, 1,
+				Subscriptions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(nodesEClass, Nodes.class, "Nodes", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getNodes_Node_handle(), ecorePackage.getEDouble(), "node_handle", null, 0, 1, Nodes.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNodes_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1, Nodes.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNodes_Tid(), ecorePackage.getEInt(), "tid", null, 0, 1, Nodes.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNodes_Rmw_handle(), ecorePackage.getEDouble(), "rmw_handle", null, 0, 1, Nodes.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNodes_Name(), ecorePackage.getEString(), "name", null, 0, 1, Nodes.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(contextsEClass, Contexts.class, "Contexts", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getContexts_ContextHandle(), ecorePackage.getEDouble(), "ContextHandle", null, 0, 1,
+				Contexts.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getContexts_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1, Contexts.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getContexts_Pid(), ecorePackage.getEInt(), "pid", null, 0, 1, Contexts.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getContexts_Version(), ecorePackage.getEString(), "version", null, 0, 1, Contexts.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(subscription_objectsEClass, Subscription_objects.class, "Subscription_objects", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSubscription_objects_Subscription(), ecorePackage.getEDouble(), "subscription", null, 0, 1,
+				Subscription_objects.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSubscription_objects_Timestamp(), ecorePackage.getEDouble(), "timestamp", null, 0, 1,
+				Subscription_objects.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSubscription_objects_Subscription_handle(), ecorePackage.getEDouble(), "subscription_handle",
+				null, 0, 1, Subscription_objects.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(servicesEClass, Services.class, "Services", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getServices_Service_handle(), ecorePackage.getEDouble(), "service_handle", null, 0, 1,
+				Services.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getServices_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1, Services.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getServices_Node_handle(), ecorePackage.getEDouble(), "node_handle", null, 0, 1, Services.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getServices_Rmw_handle(), ecorePackage.getEDouble(), "rmw_handle", null, 0, 1, Services.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getServices_Service_name(), ecorePackage.getEString(), "service_name", null, 0, 1,
+				Services.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(timersEClass, Timers.class, "Timers", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getTimers_Timer_handle(), ecorePackage.getEDouble(), "timer_handle", null, 0, 1, Timers.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTimers_Timestamp(), ecorePackage.getEDouble(), "timestamp", null, 0, 1, Timers.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTimers_Period(), ecorePackage.getEInt(), "period", null, 0, 1, Timers.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTimers_Tid(), ecorePackage.getEInt(), "tid", null, 0, 1, Timers.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(clientsEClass, Clients.class, "Clients", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getClients_Client_handle(), ecorePackage.getEDouble(), "client_handle", null, 0, 1,
+				Clients.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClients_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1, Clients.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClients_Node_handle(), ecorePackage.getEDouble(), "node_handle", null, 0, 1, Clients.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClients_Rmw_handle(), ecorePackage.getEDouble(), "rmw_handle", null, 0, 1, Clients.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClients_Service_name(), ecorePackage.getEString(), "service_name", null, 0, 1, Clients.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(timerNode_linksEClass, TimerNode_links.class, "TimerNode_links", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getTimerNode_links_Timer_handle(), ecorePackage.getEDouble(), "timer_handle", null, 0, 1,
+				TimerNode_links.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTimerNode_links_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1,
+				TimerNode_links.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTimerNode_links_Node_handle(), ecorePackage.getEDouble(), "node_handle", null, 0, 1,
+				TimerNode_links.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(callback_instancesEClass, Callback_instances.class, "Callback_instances", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCallback_instances_Callback_object(), ecorePackage.getEDouble(), "callback_object", null, 0,
+				1, Callback_instances.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallback_instances_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1,
+				Callback_instances.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallback_instances_Duration(), ecorePackage.getEInt(), "duration", null, 0, 1,
+				Callback_instances.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallback_instances_Intra_process(), ecorePackage.getEBoolean(), "intra_process", null, 0, 1,
+				Callback_instances.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(publish_instancesEClass, Publish_instances.class, "Publish_instances", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPublish_instances_Publisher_handle(), ecorePackage.getEDouble(), "publisher_handle", null, 0,
+				1, Publish_instances.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublish_instances_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1,
+				Publish_instances.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublish_instances_Message(), ecorePackage.getEDouble(), "message", null, 0, 1,
+				Publish_instances.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(callback_objectsEClass, Callback_objects.class, "Callback_objects", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCallback_objects_Reference(), ecorePackage.getEDouble(), "reference", null, 0, 1,
+				Callback_objects.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallback_objects_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1,
+				Callback_objects.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallback_objects_Callback_object(), ecorePackage.getEDouble(), "callback_object", null, 0, 1,
+				Callback_objects.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(callback_symbolsEClass, Callback_symbols.class, "Callback_symbols", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCallback_symbols_Callback_object(), ecorePackage.getEDouble(), "callback_object", null, 0, 1,
+				Callback_symbols.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallback_symbols_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1,
+				Callback_symbols.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallback_symbols_Symbol(), ecorePackage.getEString(), "symbol", null, 0, 1,
+				Callback_symbols.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(systemEClass, ROS2DataModelMM.System.class, "System", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSystem_Publish_instances(), this.getPublish_instances(), null, "publish_instances", null, 0,
+				-1, ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Callback_instances(), this.getCallback_instances(), null, "callback_instances", null,
+				0, -1, ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Subscription_objects(), this.getSubscription_objects(), null, "subscription_objects",
+				null, 0, -1, ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Timers(), this.getTimers(), null, "timers", null, 0, -1, ROS2DataModelMM.System.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Timernode_links(), this.getTimerNode_links(), null, "timernode_links", null, 0, -1,
+				ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Callback_objects(), this.getCallback_objects(), null, "callback_objects", null, 0, -1,
+				ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Subscriptions(), this.getSubscriptions(), null, "subscriptions", null, 0, -1,
+				ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Callback_symbols(), this.getCallback_symbols(), null, "callback_symbols", null, 0, -1,
+				ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Services(), this.getServices(), null, "services", null, 0, -1,
+				ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Publishers(), this.getPublishers(), null, "publishers", null, 0, -1,
+				ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Nodes(), this.getNodes(), null, "nodes", null, 0, -1, ROS2DataModelMM.System.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Contexts(), this.getContexts(), null, "contexts", null, 0, -1,
+				ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystem_Clients(), this.getClients(), null, "clients", null, 0, -1,
+				ROS2DataModelMM.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSystem_Name(), ecorePackage.getEString(), "Name", null, 0, 1, ROS2DataModelMM.System.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Create resource
+		createResource(eNS_URI);
+	}
+
+} //ROS2DataModelMMPackageImpl

@@ -1,0 +1,109 @@
+/**
+ */
+package nUMERGEFRATE;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>B</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link nUMERGEFRATE.B#getNume <em>Nume</em>}</li>
+ *   <li>{@link nUMERGEFRATE.B#getVarsta <em>Varsta</em>}</li>
+ *   <li>{@link nUMERGEFRATE.B#getA <em>A</em>}</li>
+ *   <li>{@link nUMERGEFRATE.B#getD <em>D</em>}</li>
+ * </ul>
+ *
+ * @see nUMERGEFRATE.NUMERGEFRATEPackage#getB()
+ * @model
+ * @generated
+ */
+public interface B extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Nume</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Nume</em>' attribute.
+	 * @see #setNume(String)
+	 * @see nUMERGEFRATE.NUMERGEFRATEPackage#getB_Nume()
+	 * @model
+	 * @generated
+	 */
+	String getNume();
+
+	/**
+	 * Sets the value of the '{@link nUMERGEFRATE.B#getNume <em>Nume</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Nume</em>' attribute.
+	 * @see #getNume()
+	 * @generated
+	 */
+	void setNume(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Varsta</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Varsta</em>' attribute.
+	 * @see #setVarsta(int)
+	 * @see nUMERGEFRATE.NUMERGEFRATEPackage#getB_Varsta()
+	 * @model
+	 * @generated
+	 */
+	int getVarsta();
+
+	/**
+	 * Sets the value of the '{@link nUMERGEFRATE.B#getVarsta <em>Varsta</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Varsta</em>' attribute.
+	 * @see #getVarsta()
+	 * @generated
+	 */
+	void setVarsta(int value);
+
+	/**
+	 * Returns the value of the '<em><b>A</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link nUMERGEFRATE.A#getB <em>B</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>A</em>' reference.
+	 * @see #setA(A)
+	 * @see nUMERGEFRATE.NUMERGEFRATEPackage#getB_A()
+	 * @see nUMERGEFRATE.A#getB
+	 * @model opposite="b"
+	 * @generated
+	 */
+	A getA();
+
+	/**
+	 * Sets the value of the '{@link nUMERGEFRATE.B#getA <em>A</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>A</em>' reference.
+	 * @see #getA()
+	 * @generated
+	 */
+	void setA(A value);
+
+	/**
+	 * Returns the value of the '<em><b>D</b></em>' containment reference list.
+	 * The list contents are of type {@link nUMERGEFRATE.D}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>D</em>' containment reference list.
+	 * @see nUMERGEFRATE.NUMERGEFRATEPackage#getB_D()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<D> getD();
+
+} // B

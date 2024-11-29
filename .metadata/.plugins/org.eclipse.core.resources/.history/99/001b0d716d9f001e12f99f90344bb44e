@@ -1,0 +1,138 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Services</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.Services#getService_handle <em>Service handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Services#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Services#getNode_handle <em>Node handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Services#getRmw_handle <em>Rmw handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Services#getService_name <em>Service name</em>}</li>
+ * </ul>
+ *
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage#getServices()
+ * @model
+ * @generated
+ */
+public interface Services extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Service handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Service handle</em>' attribute.
+	 * @see #setService_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getServices_Service_handle()
+	 * @model
+	 * @generated
+	 */
+	double getService_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Services#getService_handle <em>Service handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Service handle</em>' attribute.
+	 * @see #getService_handle()
+	 * @generated
+	 */
+	void setService_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timestamp</em>' attribute.
+	 * @see #setTimestamp(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getServices_Timestamp()
+	 * @model
+	 * @generated
+	 */
+	String getTimestamp();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Services#getTimestamp <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timestamp</em>' attribute.
+	 * @see #getTimestamp()
+	 * @generated
+	 */
+	void setTimestamp(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Node handle</em>' attribute.
+	 * @see #setNode_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getServices_Node_handle()
+	 * @model
+	 * @generated
+	 */
+	double getNode_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Services#getNode_handle <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Node handle</em>' attribute.
+	 * @see #getNode_handle()
+	 * @generated
+	 */
+	void setNode_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Rmw handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rmw handle</em>' attribute.
+	 * @see #setRmw_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getServices_Rmw_handle()
+	 * @model
+	 * @generated
+	 */
+	double getRmw_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Services#getRmw_handle <em>Rmw handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rmw handle</em>' attribute.
+	 * @see #getRmw_handle()
+	 * @generated
+	 */
+	void setRmw_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Service name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Service name</em>' attribute.
+	 * @see #setService_name(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getServices_Service_name()
+	 * @model
+	 * @generated
+	 */
+	String getService_name();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Services#getService_name <em>Service name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Service name</em>' attribute.
+	 * @see #getService_name()
+	 * @generated
+	 */
+	void setService_name(String value);
+
+} // Services

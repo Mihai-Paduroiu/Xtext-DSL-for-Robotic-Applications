@@ -1,0 +1,385 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.Clients;
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Clients</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.impl.ClientsImpl#getClient_handle <em>Client handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.ClientsImpl#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.ClientsImpl#getNode_handle <em>Node handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.ClientsImpl#getRmw_handle <em>Rmw handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.ClientsImpl#getService_name <em>Service name</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ClientsImpl extends MinimalEObjectImpl.Container implements Clients {
+	/**
+	 * The default value of the '{@link #getClient_handle() <em>Client handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClient_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double CLIENT_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getClient_handle() <em>Client handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClient_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double client_handle = CLIENT_HANDLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TIMESTAMP_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected String timestamp = TIMESTAMP_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getNode_handle() <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNode_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double NODE_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getNode_handle() <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNode_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double node_handle = NODE_HANDLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getRmw_handle() <em>Rmw handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRmw_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double RMW_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getRmw_handle() <em>Rmw handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRmw_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double rmw_handle = RMW_HANDLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getService_name() <em>Service name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getService_name()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SERVICE_NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getService_name() <em>Service name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getService_name()
+	 * @generated
+	 * @ordered
+	 */
+	protected String service_name = SERVICE_NAME_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClientsImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ROS2DataModelMMPackage.Literals.CLIENTS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getClient_handle() {
+		return client_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setClient_handle(double newClient_handle) {
+		double oldClient_handle = client_handle;
+		client_handle = newClient_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CLIENTS__CLIENT_HANDLE,
+					oldClient_handle, client_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTimestamp() {
+		return timestamp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTimestamp(String newTimestamp) {
+		String oldTimestamp = timestamp;
+		timestamp = newTimestamp;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CLIENTS__TIMESTAMP,
+					oldTimestamp, timestamp));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getNode_handle() {
+		return node_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNode_handle(double newNode_handle) {
+		double oldNode_handle = node_handle;
+		node_handle = newNode_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CLIENTS__NODE_HANDLE,
+					oldNode_handle, node_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getRmw_handle() {
+		return rmw_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRmw_handle(double newRmw_handle) {
+		double oldRmw_handle = rmw_handle;
+		rmw_handle = newRmw_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CLIENTS__RMW_HANDLE,
+					oldRmw_handle, rmw_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getService_name() {
+		return service_name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setService_name(String newService_name) {
+		String oldService_name = service_name;
+		service_name = newService_name;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CLIENTS__SERVICE_NAME,
+					oldService_name, service_name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CLIENTS__CLIENT_HANDLE:
+			return getClient_handle();
+		case ROS2DataModelMMPackage.CLIENTS__TIMESTAMP:
+			return getTimestamp();
+		case ROS2DataModelMMPackage.CLIENTS__NODE_HANDLE:
+			return getNode_handle();
+		case ROS2DataModelMMPackage.CLIENTS__RMW_HANDLE:
+			return getRmw_handle();
+		case ROS2DataModelMMPackage.CLIENTS__SERVICE_NAME:
+			return getService_name();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CLIENTS__CLIENT_HANDLE:
+			setClient_handle((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.CLIENTS__TIMESTAMP:
+			setTimestamp((String) newValue);
+			return;
+		case ROS2DataModelMMPackage.CLIENTS__NODE_HANDLE:
+			setNode_handle((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.CLIENTS__RMW_HANDLE:
+			setRmw_handle((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.CLIENTS__SERVICE_NAME:
+			setService_name((String) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CLIENTS__CLIENT_HANDLE:
+			setClient_handle(CLIENT_HANDLE_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.CLIENTS__TIMESTAMP:
+			setTimestamp(TIMESTAMP_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.CLIENTS__NODE_HANDLE:
+			setNode_handle(NODE_HANDLE_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.CLIENTS__RMW_HANDLE:
+			setRmw_handle(RMW_HANDLE_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.CLIENTS__SERVICE_NAME:
+			setService_name(SERVICE_NAME_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CLIENTS__CLIENT_HANDLE:
+			return client_handle != CLIENT_HANDLE_EDEFAULT;
+		case ROS2DataModelMMPackage.CLIENTS__TIMESTAMP:
+			return TIMESTAMP_EDEFAULT == null ? timestamp != null : !TIMESTAMP_EDEFAULT.equals(timestamp);
+		case ROS2DataModelMMPackage.CLIENTS__NODE_HANDLE:
+			return node_handle != NODE_HANDLE_EDEFAULT;
+		case ROS2DataModelMMPackage.CLIENTS__RMW_HANDLE:
+			return rmw_handle != RMW_HANDLE_EDEFAULT;
+		case ROS2DataModelMMPackage.CLIENTS__SERVICE_NAME:
+			return SERVICE_NAME_EDEFAULT == null ? service_name != null : !SERVICE_NAME_EDEFAULT.equals(service_name);
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (client_handle: ");
+		result.append(client_handle);
+		result.append(", timestamp: ");
+		result.append(timestamp);
+		result.append(", node_handle: ");
+		result.append(node_handle);
+		result.append(", rmw_handle: ");
+		result.append(rmw_handle);
+		result.append(", service_name: ");
+		result.append(service_name);
+		result.append(')');
+		return result.toString();
+	}
+
+} //ClientsImpl

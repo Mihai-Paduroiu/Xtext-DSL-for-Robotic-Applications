@@ -1,0 +1,329 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.Contexts;
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Contexts</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.impl.ContextsImpl#getContextHandle <em>Context Handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.ContextsImpl#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.ContextsImpl#getPid <em>Pid</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.ContextsImpl#getVersion <em>Version</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ContextsImpl extends MinimalEObjectImpl.Container implements Contexts {
+	/**
+	 * The default value of the '{@link #getContextHandle() <em>Context Handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContextHandle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double CONTEXT_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getContextHandle() <em>Context Handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContextHandle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double contextHandle = CONTEXT_HANDLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TIMESTAMP_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected String timestamp = TIMESTAMP_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPid() <em>Pid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPid()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int PID_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getPid() <em>Pid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPid()
+	 * @generated
+	 * @ordered
+	 */
+	protected int pid = PID_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getVersion() <em>Version</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVersion()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VERSION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getVersion() <em>Version</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVersion()
+	 * @generated
+	 * @ordered
+	 */
+	protected String version = VERSION_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ContextsImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ROS2DataModelMMPackage.Literals.CONTEXTS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getContextHandle() {
+		return contextHandle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setContextHandle(double newContextHandle) {
+		double oldContextHandle = contextHandle;
+		contextHandle = newContextHandle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CONTEXTS__CONTEXT_HANDLE,
+					oldContextHandle, contextHandle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTimestamp() {
+		return timestamp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTimestamp(String newTimestamp) {
+		String oldTimestamp = timestamp;
+		timestamp = newTimestamp;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CONTEXTS__TIMESTAMP,
+					oldTimestamp, timestamp));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getPid() {
+		return pid;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPid(int newPid) {
+		int oldPid = pid;
+		pid = newPid;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CONTEXTS__PID, oldPid, pid));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getVersion() {
+		return version;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setVersion(String newVersion) {
+		String oldVersion = version;
+		version = newVersion;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CONTEXTS__VERSION, oldVersion,
+					version));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CONTEXTS__CONTEXT_HANDLE:
+			return getContextHandle();
+		case ROS2DataModelMMPackage.CONTEXTS__TIMESTAMP:
+			return getTimestamp();
+		case ROS2DataModelMMPackage.CONTEXTS__PID:
+			return getPid();
+		case ROS2DataModelMMPackage.CONTEXTS__VERSION:
+			return getVersion();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CONTEXTS__CONTEXT_HANDLE:
+			setContextHandle((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.CONTEXTS__TIMESTAMP:
+			setTimestamp((String) newValue);
+			return;
+		case ROS2DataModelMMPackage.CONTEXTS__PID:
+			setPid((Integer) newValue);
+			return;
+		case ROS2DataModelMMPackage.CONTEXTS__VERSION:
+			setVersion((String) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CONTEXTS__CONTEXT_HANDLE:
+			setContextHandle(CONTEXT_HANDLE_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.CONTEXTS__TIMESTAMP:
+			setTimestamp(TIMESTAMP_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.CONTEXTS__PID:
+			setPid(PID_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.CONTEXTS__VERSION:
+			setVersion(VERSION_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CONTEXTS__CONTEXT_HANDLE:
+			return contextHandle != CONTEXT_HANDLE_EDEFAULT;
+		case ROS2DataModelMMPackage.CONTEXTS__TIMESTAMP:
+			return TIMESTAMP_EDEFAULT == null ? timestamp != null : !TIMESTAMP_EDEFAULT.equals(timestamp);
+		case ROS2DataModelMMPackage.CONTEXTS__PID:
+			return pid != PID_EDEFAULT;
+		case ROS2DataModelMMPackage.CONTEXTS__VERSION:
+			return VERSION_EDEFAULT == null ? version != null : !VERSION_EDEFAULT.equals(version);
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (ContextHandle: ");
+		result.append(contextHandle);
+		result.append(", timestamp: ");
+		result.append(timestamp);
+		result.append(", pid: ");
+		result.append(pid);
+		result.append(", version: ");
+		result.append(version);
+		result.append(')');
+		return result.toString();
+	}
+
+} //ContextsImpl

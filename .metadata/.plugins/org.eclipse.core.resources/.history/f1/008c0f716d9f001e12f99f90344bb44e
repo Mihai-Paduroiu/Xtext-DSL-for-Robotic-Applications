@@ -1,0 +1,275 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.Publish_instances;
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Publish instances</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.impl.Publish_instancesImpl#getPublisher_handle <em>Publisher handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.Publish_instancesImpl#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.Publish_instancesImpl#getMessage <em>Message</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class Publish_instancesImpl extends MinimalEObjectImpl.Container implements Publish_instances {
+	/**
+	 * The default value of the '{@link #getPublisher_handle() <em>Publisher handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPublisher_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double PUBLISHER_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getPublisher_handle() <em>Publisher handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPublisher_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double publisher_handle = PUBLISHER_HANDLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TIMESTAMP_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected String timestamp = TIMESTAMP_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getMessage() <em>Message</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMessage()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double MESSAGE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getMessage() <em>Message</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMessage()
+	 * @generated
+	 * @ordered
+	 */
+	protected double message = MESSAGE_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Publish_instancesImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ROS2DataModelMMPackage.Literals.PUBLISH_INSTANCES;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getPublisher_handle() {
+		return publisher_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPublisher_handle(double newPublisher_handle) {
+		double oldPublisher_handle = publisher_handle;
+		publisher_handle = newPublisher_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					ROS2DataModelMMPackage.PUBLISH_INSTANCES__PUBLISHER_HANDLE, oldPublisher_handle, publisher_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTimestamp() {
+		return timestamp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTimestamp(String newTimestamp) {
+		String oldTimestamp = timestamp;
+		timestamp = newTimestamp;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.PUBLISH_INSTANCES__TIMESTAMP,
+					oldTimestamp, timestamp));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getMessage() {
+		return message;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setMessage(double newMessage) {
+		double oldMessage = message;
+		message = newMessage;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.PUBLISH_INSTANCES__MESSAGE,
+					oldMessage, message));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__PUBLISHER_HANDLE:
+			return getPublisher_handle();
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__TIMESTAMP:
+			return getTimestamp();
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__MESSAGE:
+			return getMessage();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__PUBLISHER_HANDLE:
+			setPublisher_handle((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__TIMESTAMP:
+			setTimestamp((String) newValue);
+			return;
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__MESSAGE:
+			setMessage((Double) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__PUBLISHER_HANDLE:
+			setPublisher_handle(PUBLISHER_HANDLE_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__TIMESTAMP:
+			setTimestamp(TIMESTAMP_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__MESSAGE:
+			setMessage(MESSAGE_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__PUBLISHER_HANDLE:
+			return publisher_handle != PUBLISHER_HANDLE_EDEFAULT;
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__TIMESTAMP:
+			return TIMESTAMP_EDEFAULT == null ? timestamp != null : !TIMESTAMP_EDEFAULT.equals(timestamp);
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES__MESSAGE:
+			return message != MESSAGE_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (publisher_handle: ");
+		result.append(publisher_handle);
+		result.append(", timestamp: ");
+		result.append(timestamp);
+		result.append(", message: ");
+		result.append(message);
+		result.append(')');
+		return result.toString();
+	}
+
+} //Publish_instancesImpl

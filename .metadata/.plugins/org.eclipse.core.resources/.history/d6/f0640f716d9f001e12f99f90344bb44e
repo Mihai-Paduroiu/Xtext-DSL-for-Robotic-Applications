@@ -1,0 +1,383 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.Nodes;
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Nodes</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.impl.NodesImpl#getNode_handle <em>Node handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.NodesImpl#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.NodesImpl#getTid <em>Tid</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.NodesImpl#getRmw_handle <em>Rmw handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.NodesImpl#getName <em>Name</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class NodesImpl extends MinimalEObjectImpl.Container implements Nodes {
+	/**
+	 * The default value of the '{@link #getNode_handle() <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNode_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double NODE_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getNode_handle() <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNode_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double node_handle = NODE_HANDLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TIMESTAMP_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected String timestamp = TIMESTAMP_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTid() <em>Tid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTid()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int TID_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getTid() <em>Tid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTid()
+	 * @generated
+	 * @ordered
+	 */
+	protected int tid = TID_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getRmw_handle() <em>Rmw handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRmw_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double RMW_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getRmw_handle() <em>Rmw handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRmw_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double rmw_handle = RMW_HANDLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected NodesImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ROS2DataModelMMPackage.Literals.NODES;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getNode_handle() {
+		return node_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNode_handle(double newNode_handle) {
+		double oldNode_handle = node_handle;
+		node_handle = newNode_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.NODES__NODE_HANDLE,
+					oldNode_handle, node_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTimestamp() {
+		return timestamp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTimestamp(String newTimestamp) {
+		String oldTimestamp = timestamp;
+		timestamp = newTimestamp;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.NODES__TIMESTAMP, oldTimestamp,
+					timestamp));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getTid() {
+		return tid;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTid(int newTid) {
+		int oldTid = tid;
+		tid = newTid;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.NODES__TID, oldTid, tid));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getRmw_handle() {
+		return rmw_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRmw_handle(double newRmw_handle) {
+		double oldRmw_handle = rmw_handle;
+		rmw_handle = newRmw_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.NODES__RMW_HANDLE,
+					oldRmw_handle, rmw_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.NODES__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.NODES__NODE_HANDLE:
+			return getNode_handle();
+		case ROS2DataModelMMPackage.NODES__TIMESTAMP:
+			return getTimestamp();
+		case ROS2DataModelMMPackage.NODES__TID:
+			return getTid();
+		case ROS2DataModelMMPackage.NODES__RMW_HANDLE:
+			return getRmw_handle();
+		case ROS2DataModelMMPackage.NODES__NAME:
+			return getName();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.NODES__NODE_HANDLE:
+			setNode_handle((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.NODES__TIMESTAMP:
+			setTimestamp((String) newValue);
+			return;
+		case ROS2DataModelMMPackage.NODES__TID:
+			setTid((Integer) newValue);
+			return;
+		case ROS2DataModelMMPackage.NODES__RMW_HANDLE:
+			setRmw_handle((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.NODES__NAME:
+			setName((String) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.NODES__NODE_HANDLE:
+			setNode_handle(NODE_HANDLE_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.NODES__TIMESTAMP:
+			setTimestamp(TIMESTAMP_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.NODES__TID:
+			setTid(TID_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.NODES__RMW_HANDLE:
+			setRmw_handle(RMW_HANDLE_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.NODES__NAME:
+			setName(NAME_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.NODES__NODE_HANDLE:
+			return node_handle != NODE_HANDLE_EDEFAULT;
+		case ROS2DataModelMMPackage.NODES__TIMESTAMP:
+			return TIMESTAMP_EDEFAULT == null ? timestamp != null : !TIMESTAMP_EDEFAULT.equals(timestamp);
+		case ROS2DataModelMMPackage.NODES__TID:
+			return tid != TID_EDEFAULT;
+		case ROS2DataModelMMPackage.NODES__RMW_HANDLE:
+			return rmw_handle != RMW_HANDLE_EDEFAULT;
+		case ROS2DataModelMMPackage.NODES__NAME:
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (node_handle: ");
+		result.append(node_handle);
+		result.append(", timestamp: ");
+		result.append(timestamp);
+		result.append(", tid: ");
+		result.append(tid);
+		result.append(", rmw_handle: ");
+		result.append(rmw_handle);
+		result.append(", name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
+	}
+
+} //NodesImpl

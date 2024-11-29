@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.trydsl.demo.demoDsl.Book"/>
+    <fullyQualifiedTypeName name="com.trydsl.demo.demoDsl.DemoDslPackage"/>
+    <fullyQualifiedTypeName name="com.trydsl.demo.demoDsl.DemoDslPackage.Literals"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="org.xtext.example.mydsl.myDsl.System"/>
+    <fullyQualifiedTypeName name="org.xtext.example.mydsl.myDsl.MyDslPackage"/>
+    <fullyQualifiedTypeName name="org.xtext.example.mydsl.myDsl.MyDslPackage.Literals"/>
+    <fullyQualifiedTypeName name="org.xtext.example.mydsl.myDsl.Publisher"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collector"/>
+    <fullyQualifiedTypeName name="org.xtext.example.mydsl.myDsl.Callback"/>
+    <fullyQualifiedTypeName name="org.xtext.example.mydsl.myDsl.ServiceCallback"/>
+    <fullyQualifiedTypeName name="org.xtext.example.mydsl.myDsl.ClientCallback"/>
+    <fullyQualifiedTypeName name="org.xtext.example.mydsl.myDsl.TimerCallback"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.eclipse.xtext.validation.Check"/>
+    <fullyQualifiedTypeName name="org.xtext.example.mydsl.myDsl.Topic"/>
+    <fullyQualifiedTypeName name="org.xtext.example.mydsl.myDsl.SubscriberCallback"/>
+</qualifiedTypeNameHistroy>

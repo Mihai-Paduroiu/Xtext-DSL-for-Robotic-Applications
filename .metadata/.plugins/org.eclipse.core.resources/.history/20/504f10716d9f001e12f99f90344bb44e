@@ -1,0 +1,276 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+import ROS2DataModelMM.Subscription_objects;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Subscription objects</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.impl.Subscription_objectsImpl#getSubscription <em>Subscription</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.Subscription_objectsImpl#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.Subscription_objectsImpl#getSubscription_handle <em>Subscription handle</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class Subscription_objectsImpl extends MinimalEObjectImpl.Container implements Subscription_objects {
+	/**
+	 * The default value of the '{@link #getSubscription() <em>Subscription</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubscription()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double SUBSCRIPTION_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getSubscription() <em>Subscription</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubscription()
+	 * @generated
+	 * @ordered
+	 */
+	protected double subscription = SUBSCRIPTION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double TIMESTAMP_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected double timestamp = TIMESTAMP_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getSubscription_handle() <em>Subscription handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubscription_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double SUBSCRIPTION_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getSubscription_handle() <em>Subscription handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubscription_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double subscription_handle = SUBSCRIPTION_HANDLE_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Subscription_objectsImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ROS2DataModelMMPackage.Literals.SUBSCRIPTION_OBJECTS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getSubscription() {
+		return subscription;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSubscription(double newSubscription) {
+		double oldSubscription = subscription;
+		subscription = newSubscription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__SUBSCRIPTION, oldSubscription, subscription));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getTimestamp() {
+		return timestamp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTimestamp(double newTimestamp) {
+		double oldTimestamp = timestamp;
+		timestamp = newTimestamp;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__TIMESTAMP, oldTimestamp, timestamp));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getSubscription_handle() {
+		return subscription_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSubscription_handle(double newSubscription_handle) {
+		double oldSubscription_handle = subscription_handle;
+		subscription_handle = newSubscription_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__SUBSCRIPTION_HANDLE, oldSubscription_handle,
+					subscription_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__SUBSCRIPTION:
+			return getSubscription();
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__TIMESTAMP:
+			return getTimestamp();
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__SUBSCRIPTION_HANDLE:
+			return getSubscription_handle();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__SUBSCRIPTION:
+			setSubscription((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__TIMESTAMP:
+			setTimestamp((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__SUBSCRIPTION_HANDLE:
+			setSubscription_handle((Double) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__SUBSCRIPTION:
+			setSubscription(SUBSCRIPTION_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__TIMESTAMP:
+			setTimestamp(TIMESTAMP_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__SUBSCRIPTION_HANDLE:
+			setSubscription_handle(SUBSCRIPTION_HANDLE_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__SUBSCRIPTION:
+			return subscription != SUBSCRIPTION_EDEFAULT;
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__TIMESTAMP:
+			return timestamp != TIMESTAMP_EDEFAULT;
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS__SUBSCRIPTION_HANDLE:
+			return subscription_handle != SUBSCRIPTION_HANDLE_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (subscription: ");
+		result.append(subscription);
+		result.append(", timestamp: ");
+		result.append(timestamp);
+		result.append(", subscription_handle: ");
+		result.append(subscription_handle);
+		result.append(')');
+		return result.toString();
+	}
+
+} //Subscription_objectsImpl

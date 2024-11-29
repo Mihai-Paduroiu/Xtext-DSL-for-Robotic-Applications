@@ -1,0 +1,92 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Subscription objects</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.Subscription_objects#getSubscription <em>Subscription</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Subscription_objects#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Subscription_objects#getSubscription_handle <em>Subscription handle</em>}</li>
+ * </ul>
+ *
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscription_objects()
+ * @model
+ * @generated
+ */
+public interface Subscription_objects extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Subscription</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Subscription</em>' attribute.
+	 * @see #setSubscription(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscription_objects_Subscription()
+	 * @model
+	 * @generated
+	 */
+	double getSubscription();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Subscription_objects#getSubscription <em>Subscription</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Subscription</em>' attribute.
+	 * @see #getSubscription()
+	 * @generated
+	 */
+	void setSubscription(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timestamp</em>' attribute.
+	 * @see #setTimestamp(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscription_objects_Timestamp()
+	 * @model
+	 * @generated
+	 */
+	double getTimestamp();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Subscription_objects#getTimestamp <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timestamp</em>' attribute.
+	 * @see #getTimestamp()
+	 * @generated
+	 */
+	void setTimestamp(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Subscription handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Subscription handle</em>' attribute.
+	 * @see #setSubscription_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscription_objects_Subscription_handle()
+	 * @model
+	 * @generated
+	 */
+	double getSubscription_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Subscription_objects#getSubscription_handle <em>Subscription handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Subscription handle</em>' attribute.
+	 * @see #getSubscription_handle()
+	 * @generated
+	 */
+	void setSubscription_handle(double value);
+
+} // Subscription_objects

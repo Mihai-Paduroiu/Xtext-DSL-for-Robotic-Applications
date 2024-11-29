@@ -1,0 +1,217 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>System</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.System#getPublish_instances <em>Publish instances</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getCallback_instances <em>Callback instances</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getSubscription_objects <em>Subscription objects</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getTimers <em>Timers</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getTimernode_links <em>Timernode links</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getCallback_objects <em>Callback objects</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getSubscriptions <em>Subscriptions</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getCallback_symbols <em>Callback symbols</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getServices <em>Services</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getPublishers <em>Publishers</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getNodes <em>Nodes</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getContexts <em>Contexts</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getClients <em>Clients</em>}</li>
+ *   <li>{@link ROS2DataModelMM.System#getName <em>Name</em>}</li>
+ * </ul>
+ *
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem()
+ * @model
+ * @generated
+ */
+public interface System extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Publish instances</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Publish_instances}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Publish instances</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Publish_instances()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Publish_instances> getPublish_instances();
+
+	/**
+	 * Returns the value of the '<em><b>Callback instances</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Callback_instances}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Callback instances</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Callback_instances()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Callback_instances> getCallback_instances();
+
+	/**
+	 * Returns the value of the '<em><b>Subscription objects</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Subscription_objects}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Subscription objects</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Subscription_objects()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Subscription_objects> getSubscription_objects();
+
+	/**
+	 * Returns the value of the '<em><b>Timers</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Timers}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timers</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Timers()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Timers> getTimers();
+
+	/**
+	 * Returns the value of the '<em><b>Timernode links</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.TimerNode_links}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timernode links</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Timernode_links()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<TimerNode_links> getTimernode_links();
+
+	/**
+	 * Returns the value of the '<em><b>Callback objects</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Callback_objects}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Callback objects</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Callback_objects()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Callback_objects> getCallback_objects();
+
+	/**
+	 * Returns the value of the '<em><b>Subscriptions</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Subscriptions}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Subscriptions</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Subscriptions()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Subscriptions> getSubscriptions();
+
+	/**
+	 * Returns the value of the '<em><b>Callback symbols</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Callback_symbols}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Callback symbols</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Callback_symbols()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Callback_symbols> getCallback_symbols();
+
+	/**
+	 * Returns the value of the '<em><b>Services</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Services}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Services</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Services()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Services> getServices();
+
+	/**
+	 * Returns the value of the '<em><b>Publishers</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Publishers}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Publishers</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Publishers()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Publishers> getPublishers();
+
+	/**
+	 * Returns the value of the '<em><b>Nodes</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Nodes}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Nodes</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Nodes()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Nodes> getNodes();
+
+	/**
+	 * Returns the value of the '<em><b>Contexts</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Contexts}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contexts</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Contexts()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Contexts> getContexts();
+
+	/**
+	 * Returns the value of the '<em><b>Clients</b></em>' containment reference list.
+	 * The list contents are of type {@link ROS2DataModelMM.Clients}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Clients</em>' containment reference list.
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Clients()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Clients> getClients();
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSystem_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.System#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+} // System

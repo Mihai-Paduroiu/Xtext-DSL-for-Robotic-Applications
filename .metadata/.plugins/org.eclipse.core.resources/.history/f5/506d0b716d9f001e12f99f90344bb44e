@@ -1,0 +1,115 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Callback instances</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.Callback_instances#getCallback_object <em>Callback object</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Callback_instances#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Callback_instances#getDuration <em>Duration</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Callback_instances#isIntra_process <em>Intra process</em>}</li>
+ * </ul>
+ *
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage#getCallback_instances()
+ * @model
+ * @generated
+ */
+public interface Callback_instances extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Callback object</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Callback object</em>' attribute.
+	 * @see #setCallback_object(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getCallback_instances_Callback_object()
+	 * @model
+	 * @generated
+	 */
+	double getCallback_object();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Callback_instances#getCallback_object <em>Callback object</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Callback object</em>' attribute.
+	 * @see #getCallback_object()
+	 * @generated
+	 */
+	void setCallback_object(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timestamp</em>' attribute.
+	 * @see #setTimestamp(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getCallback_instances_Timestamp()
+	 * @model
+	 * @generated
+	 */
+	String getTimestamp();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Callback_instances#getTimestamp <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timestamp</em>' attribute.
+	 * @see #getTimestamp()
+	 * @generated
+	 */
+	void setTimestamp(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Duration</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Duration</em>' attribute.
+	 * @see #setDuration(int)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getCallback_instances_Duration()
+	 * @model
+	 * @generated
+	 */
+	int getDuration();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Callback_instances#getDuration <em>Duration</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Duration</em>' attribute.
+	 * @see #getDuration()
+	 * @generated
+	 */
+	void setDuration(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Intra process</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Intra process</em>' attribute.
+	 * @see #setIntra_process(boolean)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getCallback_instances_Intra_process()
+	 * @model
+	 * @generated
+	 */
+	boolean isIntra_process();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Callback_instances#isIntra_process <em>Intra process</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Intra process</em>' attribute.
+	 * @see #isIntra_process()
+	 * @generated
+	 */
+	void setIntra_process(boolean value);
+
+} // Callback_instances

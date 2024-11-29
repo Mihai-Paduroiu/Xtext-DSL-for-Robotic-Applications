@@ -1,0 +1,676 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.Callback_instances;
+import ROS2DataModelMM.Callback_objects;
+import ROS2DataModelMM.Callback_symbols;
+import ROS2DataModelMM.Clients;
+import ROS2DataModelMM.Contexts;
+import ROS2DataModelMM.Nodes;
+import ROS2DataModelMM.Publish_instances;
+import ROS2DataModelMM.Publishers;
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+import ROS2DataModelMM.Services;
+import ROS2DataModelMM.Subscription_objects;
+import ROS2DataModelMM.Subscriptions;
+import ROS2DataModelMM.TimerNode_links;
+import ROS2DataModelMM.Timers;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>System</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getPublish_instances <em>Publish instances</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getCallback_instances <em>Callback instances</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getSubscription_objects <em>Subscription objects</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getTimers <em>Timers</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getTimernode_links <em>Timernode links</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getCallback_objects <em>Callback objects</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getSubscriptions <em>Subscriptions</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getCallback_symbols <em>Callback symbols</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getServices <em>Services</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getPublishers <em>Publishers</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getNodes <em>Nodes</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getContexts <em>Contexts</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getClients <em>Clients</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SystemImpl#getName <em>Name</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class SystemImpl extends MinimalEObjectImpl.Container implements ROS2DataModelMM.System {
+	/**
+	 * The cached value of the '{@link #getPublish_instances() <em>Publish instances</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPublish_instances()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Publish_instances> publish_instances;
+
+	/**
+	 * The cached value of the '{@link #getCallback_instances() <em>Callback instances</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCallback_instances()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Callback_instances> callback_instances;
+
+	/**
+	 * The cached value of the '{@link #getSubscription_objects() <em>Subscription objects</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubscription_objects()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Subscription_objects> subscription_objects;
+
+	/**
+	 * The cached value of the '{@link #getTimers() <em>Timers</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimers()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Timers> timers;
+
+	/**
+	 * The cached value of the '{@link #getTimernode_links() <em>Timernode links</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimernode_links()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<TimerNode_links> timernode_links;
+
+	/**
+	 * The cached value of the '{@link #getCallback_objects() <em>Callback objects</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCallback_objects()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Callback_objects> callback_objects;
+
+	/**
+	 * The cached value of the '{@link #getSubscriptions() <em>Subscriptions</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubscriptions()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Subscriptions> subscriptions;
+
+	/**
+	 * The cached value of the '{@link #getCallback_symbols() <em>Callback symbols</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCallback_symbols()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Callback_symbols> callback_symbols;
+
+	/**
+	 * The cached value of the '{@link #getServices() <em>Services</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getServices()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Services> services;
+
+	/**
+	 * The cached value of the '{@link #getPublishers() <em>Publishers</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPublishers()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Publishers> publishers;
+
+	/**
+	 * The cached value of the '{@link #getNodes() <em>Nodes</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNodes()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Nodes> nodes;
+
+	/**
+	 * The cached value of the '{@link #getContexts() <em>Contexts</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContexts()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Contexts> contexts;
+
+	/**
+	 * The cached value of the '{@link #getClients() <em>Clients</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClients()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Clients> clients;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SystemImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ROS2DataModelMMPackage.Literals.SYSTEM;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Publish_instances> getPublish_instances() {
+		if (publish_instances == null) {
+			publish_instances = new EObjectContainmentEList<Publish_instances>(Publish_instances.class, this,
+					ROS2DataModelMMPackage.SYSTEM__PUBLISH_INSTANCES);
+		}
+		return publish_instances;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Callback_instances> getCallback_instances() {
+		if (callback_instances == null) {
+			callback_instances = new EObjectContainmentEList<Callback_instances>(Callback_instances.class, this,
+					ROS2DataModelMMPackage.SYSTEM__CALLBACK_INSTANCES);
+		}
+		return callback_instances;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Subscription_objects> getSubscription_objects() {
+		if (subscription_objects == null) {
+			subscription_objects = new EObjectContainmentEList<Subscription_objects>(Subscription_objects.class, this,
+					ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTION_OBJECTS);
+		}
+		return subscription_objects;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Timers> getTimers() {
+		if (timers == null) {
+			timers = new EObjectContainmentEList<Timers>(Timers.class, this, ROS2DataModelMMPackage.SYSTEM__TIMERS);
+		}
+		return timers;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<TimerNode_links> getTimernode_links() {
+		if (timernode_links == null) {
+			timernode_links = new EObjectContainmentEList<TimerNode_links>(TimerNode_links.class, this,
+					ROS2DataModelMMPackage.SYSTEM__TIMERNODE_LINKS);
+		}
+		return timernode_links;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Callback_objects> getCallback_objects() {
+		if (callback_objects == null) {
+			callback_objects = new EObjectContainmentEList<Callback_objects>(Callback_objects.class, this,
+					ROS2DataModelMMPackage.SYSTEM__CALLBACK_OBJECTS);
+		}
+		return callback_objects;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Subscriptions> getSubscriptions() {
+		if (subscriptions == null) {
+			subscriptions = new EObjectContainmentEList<Subscriptions>(Subscriptions.class, this,
+					ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTIONS);
+		}
+		return subscriptions;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Callback_symbols> getCallback_symbols() {
+		if (callback_symbols == null) {
+			callback_symbols = new EObjectContainmentEList<Callback_symbols>(Callback_symbols.class, this,
+					ROS2DataModelMMPackage.SYSTEM__CALLBACK_SYMBOLS);
+		}
+		return callback_symbols;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Services> getServices() {
+		if (services == null) {
+			services = new EObjectContainmentEList<Services>(Services.class, this,
+					ROS2DataModelMMPackage.SYSTEM__SERVICES);
+		}
+		return services;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Publishers> getPublishers() {
+		if (publishers == null) {
+			publishers = new EObjectContainmentEList<Publishers>(Publishers.class, this,
+					ROS2DataModelMMPackage.SYSTEM__PUBLISHERS);
+		}
+		return publishers;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Nodes> getNodes() {
+		if (nodes == null) {
+			nodes = new EObjectContainmentEList<Nodes>(Nodes.class, this, ROS2DataModelMMPackage.SYSTEM__NODES);
+		}
+		return nodes;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Contexts> getContexts() {
+		if (contexts == null) {
+			contexts = new EObjectContainmentEList<Contexts>(Contexts.class, this,
+					ROS2DataModelMMPackage.SYSTEM__CONTEXTS);
+		}
+		return contexts;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Clients> getClients() {
+		if (clients == null) {
+			clients = new EObjectContainmentEList<Clients>(Clients.class, this, ROS2DataModelMMPackage.SYSTEM__CLIENTS);
+		}
+		return clients;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.SYSTEM__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SYSTEM__PUBLISH_INSTANCES:
+			return ((InternalEList<?>) getPublish_instances()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_INSTANCES:
+			return ((InternalEList<?>) getCallback_instances()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTION_OBJECTS:
+			return ((InternalEList<?>) getSubscription_objects()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__TIMERS:
+			return ((InternalEList<?>) getTimers()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__TIMERNODE_LINKS:
+			return ((InternalEList<?>) getTimernode_links()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_OBJECTS:
+			return ((InternalEList<?>) getCallback_objects()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTIONS:
+			return ((InternalEList<?>) getSubscriptions()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_SYMBOLS:
+			return ((InternalEList<?>) getCallback_symbols()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__SERVICES:
+			return ((InternalEList<?>) getServices()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__PUBLISHERS:
+			return ((InternalEList<?>) getPublishers()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__NODES:
+			return ((InternalEList<?>) getNodes()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__CONTEXTS:
+			return ((InternalEList<?>) getContexts()).basicRemove(otherEnd, msgs);
+		case ROS2DataModelMMPackage.SYSTEM__CLIENTS:
+			return ((InternalEList<?>) getClients()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SYSTEM__PUBLISH_INSTANCES:
+			return getPublish_instances();
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_INSTANCES:
+			return getCallback_instances();
+		case ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTION_OBJECTS:
+			return getSubscription_objects();
+		case ROS2DataModelMMPackage.SYSTEM__TIMERS:
+			return getTimers();
+		case ROS2DataModelMMPackage.SYSTEM__TIMERNODE_LINKS:
+			return getTimernode_links();
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_OBJECTS:
+			return getCallback_objects();
+		case ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTIONS:
+			return getSubscriptions();
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_SYMBOLS:
+			return getCallback_symbols();
+		case ROS2DataModelMMPackage.SYSTEM__SERVICES:
+			return getServices();
+		case ROS2DataModelMMPackage.SYSTEM__PUBLISHERS:
+			return getPublishers();
+		case ROS2DataModelMMPackage.SYSTEM__NODES:
+			return getNodes();
+		case ROS2DataModelMMPackage.SYSTEM__CONTEXTS:
+			return getContexts();
+		case ROS2DataModelMMPackage.SYSTEM__CLIENTS:
+			return getClients();
+		case ROS2DataModelMMPackage.SYSTEM__NAME:
+			return getName();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SYSTEM__PUBLISH_INSTANCES:
+			getPublish_instances().clear();
+			getPublish_instances().addAll((Collection<? extends Publish_instances>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_INSTANCES:
+			getCallback_instances().clear();
+			getCallback_instances().addAll((Collection<? extends Callback_instances>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTION_OBJECTS:
+			getSubscription_objects().clear();
+			getSubscription_objects().addAll((Collection<? extends Subscription_objects>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__TIMERS:
+			getTimers().clear();
+			getTimers().addAll((Collection<? extends Timers>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__TIMERNODE_LINKS:
+			getTimernode_links().clear();
+			getTimernode_links().addAll((Collection<? extends TimerNode_links>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_OBJECTS:
+			getCallback_objects().clear();
+			getCallback_objects().addAll((Collection<? extends Callback_objects>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTIONS:
+			getSubscriptions().clear();
+			getSubscriptions().addAll((Collection<? extends Subscriptions>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_SYMBOLS:
+			getCallback_symbols().clear();
+			getCallback_symbols().addAll((Collection<? extends Callback_symbols>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__SERVICES:
+			getServices().clear();
+			getServices().addAll((Collection<? extends Services>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__PUBLISHERS:
+			getPublishers().clear();
+			getPublishers().addAll((Collection<? extends Publishers>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__NODES:
+			getNodes().clear();
+			getNodes().addAll((Collection<? extends Nodes>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__CONTEXTS:
+			getContexts().clear();
+			getContexts().addAll((Collection<? extends Contexts>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__CLIENTS:
+			getClients().clear();
+			getClients().addAll((Collection<? extends Clients>) newValue);
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__NAME:
+			setName((String) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SYSTEM__PUBLISH_INSTANCES:
+			getPublish_instances().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_INSTANCES:
+			getCallback_instances().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTION_OBJECTS:
+			getSubscription_objects().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__TIMERS:
+			getTimers().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__TIMERNODE_LINKS:
+			getTimernode_links().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_OBJECTS:
+			getCallback_objects().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTIONS:
+			getSubscriptions().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_SYMBOLS:
+			getCallback_symbols().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__SERVICES:
+			getServices().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__PUBLISHERS:
+			getPublishers().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__NODES:
+			getNodes().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__CONTEXTS:
+			getContexts().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__CLIENTS:
+			getClients().clear();
+			return;
+		case ROS2DataModelMMPackage.SYSTEM__NAME:
+			setName(NAME_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SYSTEM__PUBLISH_INSTANCES:
+			return publish_instances != null && !publish_instances.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_INSTANCES:
+			return callback_instances != null && !callback_instances.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTION_OBJECTS:
+			return subscription_objects != null && !subscription_objects.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__TIMERS:
+			return timers != null && !timers.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__TIMERNODE_LINKS:
+			return timernode_links != null && !timernode_links.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_OBJECTS:
+			return callback_objects != null && !callback_objects.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__SUBSCRIPTIONS:
+			return subscriptions != null && !subscriptions.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__CALLBACK_SYMBOLS:
+			return callback_symbols != null && !callback_symbols.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__SERVICES:
+			return services != null && !services.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__PUBLISHERS:
+			return publishers != null && !publishers.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__NODES:
+			return nodes != null && !nodes.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__CONTEXTS:
+			return contexts != null && !contexts.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__CLIENTS:
+			return clients != null && !clients.isEmpty();
+		case ROS2DataModelMMPackage.SYSTEM__NAME:
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (Name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
+	}
+
+} //SystemImpl

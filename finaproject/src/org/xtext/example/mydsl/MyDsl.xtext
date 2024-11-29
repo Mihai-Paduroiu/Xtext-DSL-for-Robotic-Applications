@@ -1,0 +1,156 @@
+grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/example/mydsl/MyDsl"
+
+
+SystemModel returns SystemModel:
+    systems+=System*;
+ 
+System:
+	'System' SystemName=STRING
+    '{'
+         nodes+=Node+
+         topics+=Topic*
+       	 executors+=Executor+
+         services+=Service*
+         periodictimers+=PeriodicTimer*
+         walltimers+=Walltimer*
+    '}';
+    
+Node:
+    'Node' NodeName=STRING
+    '{'
+        publishers+=Publisher*
+        subscribers+=SubscriberCallback* 
+        services+=ServiceCallback*
+        servicerequests+=ServiceRequest* 
+        clients+=ClientCallback* 
+        timers+=TimerCallback*
+    '}';
+    
+    
+Callback: 
+    SubscriberCallback | ServiceCallback | ClientCallback | TimerCallback;
+	
+        
+Executor:
+	{Executor}
+    'Executor' name=ID
+     'Type' type=ExecutorType
+     ('executed' executed+=[Callback|ID]*)
+    '{'
+       
+    '}';
+ 
+Service:
+	'Service' name=ID
+	 ('serviceReq' serviceReq=[ServiceRequest|ID])?
+	 ('clientCAll' clientCAll=[ClientCallback|ID])?
+	 ('serviceCAll' serviceCAll=[ServiceCallback|ID])?
+	'{'
+    '}';
+    
+    
+ServiceRequest:
+    'ServiceRequest' name=ID
+   	 ('service' service=[Service|ID])?
+    '{'
+    '}';
+    
+    
+Topic:
+	{Topic}
+    'Topic'
+    name=ID 
+    ('published' published+=[Publisher|ID])*
+    ('subscribed' subscribed+=[SubscriberCallback|ID])*
+    '{'
+    '}';
+
+
+Publisher:
+	'Publisher'
+   	 name=ID
+   	 ('publishes' publishes+=[Topic|ID]+)
+   	 ('BufferSize' bufferSize=INT)
+    '{'
+    '}';
+
+SubscriberCallback:
+     'SubscriberCallback' 
+     'BufferSize' bufferSize=INT
+     'CallbackName' name=ID
+     ('subscribesTo' subscribesTo+=[Topic|ID]+)?
+     ('executedIn' executedIn+=[Executor|ID]+)?
+     ('CallBackExecutionTime' executionTime=INT)?
+     
+    '{'
+    '}';
+
+ServiceCallback:
+    'ServiceCallback'
+    'BufferSize' bufferSize=INT
+    'CallbackName' name=ID
+    ('service' service=[Service|ID])?
+    ('executedIn' executedIn+=[Executor|ID]+)?
+    ('CallBackExecutionTime' executionTime=INT)?
+   
+    '{'  
+    '}';
+    
+
+ClientCallback:
+    'ClientCallback'
+    'BufferSize' bufferSize=INT
+    'CallbackName' name=ID
+    ('executedIn' executedIn+=[Executor|ID]+)?
+    ('CallBackExecutionTime' executionTime=INT)?
+    '{'
+    '}';
+
+
+TimerCallback:
+    'TimerCallback'
+    'BufferSize' bufferSize=INT
+    'CallbackName' name=ID
+    ('executedIn' executedIn+=[Executor|ID]+)?
+    ('of' of=[SystemTimer|STRING])?
+    ('CallBackExecutionTime' executionTime=INT)?
+    '{'
+    '}';
+    
+ 
+SystemTimer:
+    PeriodicTimer | Walltimer ; 
+  
+
+PeriodicTimer:
+    {PeriodicTimer}
+     'PeriodicTimer'
+     'Period' period=INT
+     'SystemTimerName' name=STRING
+     'from' from=[TimerCallback|ID]
+    '{'
+      	 systemtimer+=SystemTimer*
+    '}';
+
+   
+Walltimer:
+    {Walltimer}
+    'Walltimer'
+   	'ReleaseTimes' releaseTimes=INT
+   	'SystemTimerName' name=STRING
+   	'from' from=[TimerCallback|ID]
+    '{'
+     	 systemtimer+=SystemTimer*
+    '}';
+    
+
+			enum ExecutorType:
+   					 SINGLETHREADED = 'SINGLETHREADED' |
+   					 STATICSINGLETHREADED = 'STATICSINGLETHREADED' |
+   					 MULTITHREADED = 'MULTITHREADED';			 
+   					 
+   					 
+   					 
+   					 

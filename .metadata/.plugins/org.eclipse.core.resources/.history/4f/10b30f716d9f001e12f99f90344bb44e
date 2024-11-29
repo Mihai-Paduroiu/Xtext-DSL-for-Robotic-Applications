@@ -1,0 +1,265 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.Callback_instances;
+import ROS2DataModelMM.Callback_objects;
+import ROS2DataModelMM.Callback_symbols;
+import ROS2DataModelMM.Clients;
+import ROS2DataModelMM.Contexts;
+import ROS2DataModelMM.Nodes;
+import ROS2DataModelMM.Publish_instances;
+import ROS2DataModelMM.Publishers;
+import ROS2DataModelMM.ROS2DataModelMMFactory;
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+import ROS2DataModelMM.Services;
+import ROS2DataModelMM.Subscription_objects;
+import ROS2DataModelMM.Subscriptions;
+import ROS2DataModelMM.TimerNode_links;
+import ROS2DataModelMM.Timers;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Factory</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class ROS2DataModelMMFactoryImpl extends EFactoryImpl implements ROS2DataModelMMFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static ROS2DataModelMMFactory init() {
+		try {
+			ROS2DataModelMMFactory theROS2DataModelMMFactory = (ROS2DataModelMMFactory) EPackage.Registry.INSTANCE
+					.getEFactory(ROS2DataModelMMPackage.eNS_URI);
+			if (theROS2DataModelMMFactory != null) {
+				return theROS2DataModelMMFactory;
+			}
+		} catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new ROS2DataModelMMFactoryImpl();
+	}
+
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ROS2DataModelMMFactoryImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+		case ROS2DataModelMMPackage.PUBLISHERS:
+			return createPublishers();
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS:
+			return createSubscriptions();
+		case ROS2DataModelMMPackage.NODES:
+			return createNodes();
+		case ROS2DataModelMMPackage.CONTEXTS:
+			return createContexts();
+		case ROS2DataModelMMPackage.SUBSCRIPTION_OBJECTS:
+			return createSubscription_objects();
+		case ROS2DataModelMMPackage.SERVICES:
+			return createServices();
+		case ROS2DataModelMMPackage.TIMERS:
+			return createTimers();
+		case ROS2DataModelMMPackage.CLIENTS:
+			return createClients();
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS:
+			return createTimerNode_links();
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES:
+			return createCallback_instances();
+		case ROS2DataModelMMPackage.PUBLISH_INSTANCES:
+			return createPublish_instances();
+		case ROS2DataModelMMPackage.CALLBACK_OBJECTS:
+			return createCallback_objects();
+		case ROS2DataModelMMPackage.CALLBACK_SYMBOLS:
+			return createCallback_symbols();
+		case ROS2DataModelMMPackage.SYSTEM:
+			return createSystem();
+		default:
+			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Publishers createPublishers() {
+		PublishersImpl publishers = new PublishersImpl();
+		return publishers;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Subscriptions createSubscriptions() {
+		SubscriptionsImpl subscriptions = new SubscriptionsImpl();
+		return subscriptions;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Nodes createNodes() {
+		NodesImpl nodes = new NodesImpl();
+		return nodes;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Contexts createContexts() {
+		ContextsImpl contexts = new ContextsImpl();
+		return contexts;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Subscription_objects createSubscription_objects() {
+		Subscription_objectsImpl subscription_objects = new Subscription_objectsImpl();
+		return subscription_objects;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Services createServices() {
+		ServicesImpl services = new ServicesImpl();
+		return services;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Timers createTimers() {
+		TimersImpl timers = new TimersImpl();
+		return timers;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Clients createClients() {
+		ClientsImpl clients = new ClientsImpl();
+		return clients;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TimerNode_links createTimerNode_links() {
+		TimerNode_linksImpl timerNode_links = new TimerNode_linksImpl();
+		return timerNode_links;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Callback_instances createCallback_instances() {
+		Callback_instancesImpl callback_instances = new Callback_instancesImpl();
+		return callback_instances;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Publish_instances createPublish_instances() {
+		Publish_instancesImpl publish_instances = new Publish_instancesImpl();
+		return publish_instances;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Callback_objects createCallback_objects() {
+		Callback_objectsImpl callback_objects = new Callback_objectsImpl();
+		return callback_objects;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Callback_symbols createCallback_symbols() {
+		Callback_symbolsImpl callback_symbols = new Callback_symbolsImpl();
+		return callback_symbols;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ROS2DataModelMM.System createSystem() {
+		SystemImpl system = new SystemImpl();
+		return system;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ROS2DataModelMMPackage getROS2DataModelMMPackage() {
+		return (ROS2DataModelMMPackage) getEPackage();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static ROS2DataModelMMPackage getPackage() {
+		return ROS2DataModelMMPackage.eINSTANCE;
+	}
+
+} //ROS2DataModelMMFactoryImpl

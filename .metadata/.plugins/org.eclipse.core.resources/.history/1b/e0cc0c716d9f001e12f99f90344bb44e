@@ -1,0 +1,159 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EFactory;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Factory</b> for the model.
+ * It provides a create method for each non-abstract class of the model.
+ * <!-- end-user-doc -->
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage
+ * @generated
+ */
+public interface ROS2DataModelMMFactory extends EFactory {
+	/**
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	ROS2DataModelMMFactory eINSTANCE = ROS2DataModelMM.impl.ROS2DataModelMMFactoryImpl.init();
+
+	/**
+	 * Returns a new object of class '<em>Publishers</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Publishers</em>'.
+	 * @generated
+	 */
+	Publishers createPublishers();
+
+	/**
+	 * Returns a new object of class '<em>Subscriptions</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Subscriptions</em>'.
+	 * @generated
+	 */
+	Subscriptions createSubscriptions();
+
+	/**
+	 * Returns a new object of class '<em>Nodes</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Nodes</em>'.
+	 * @generated
+	 */
+	Nodes createNodes();
+
+	/**
+	 * Returns a new object of class '<em>Contexts</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Contexts</em>'.
+	 * @generated
+	 */
+	Contexts createContexts();
+
+	/**
+	 * Returns a new object of class '<em>Subscription objects</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Subscription objects</em>'.
+	 * @generated
+	 */
+	Subscription_objects createSubscription_objects();
+
+	/**
+	 * Returns a new object of class '<em>Services</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Services</em>'.
+	 * @generated
+	 */
+	Services createServices();
+
+	/**
+	 * Returns a new object of class '<em>Timers</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Timers</em>'.
+	 * @generated
+	 */
+	Timers createTimers();
+
+	/**
+	 * Returns a new object of class '<em>Clients</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Clients</em>'.
+	 * @generated
+	 */
+	Clients createClients();
+
+	/**
+	 * Returns a new object of class '<em>Timer Node links</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Timer Node links</em>'.
+	 * @generated
+	 */
+	TimerNode_links createTimerNode_links();
+
+	/**
+	 * Returns a new object of class '<em>Callback instances</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Callback instances</em>'.
+	 * @generated
+	 */
+	Callback_instances createCallback_instances();
+
+	/**
+	 * Returns a new object of class '<em>Publish instances</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Publish instances</em>'.
+	 * @generated
+	 */
+	Publish_instances createPublish_instances();
+
+	/**
+	 * Returns a new object of class '<em>Callback objects</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Callback objects</em>'.
+	 * @generated
+	 */
+	Callback_objects createCallback_objects();
+
+	/**
+	 * Returns a new object of class '<em>Callback symbols</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Callback symbols</em>'.
+	 * @generated
+	 */
+	Callback_symbols createCallback_symbols();
+
+	/**
+	 * Returns a new object of class '<em>System</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>System</em>'.
+	 * @generated
+	 */
+	System createSystem();
+
+	/**
+	 * Returns the package supported by this factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the package supported by this factory.
+	 * @generated
+	 */
+	ROS2DataModelMMPackage getROS2DataModelMMPackage();
+
+} //ROS2DataModelMMFactory

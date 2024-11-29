@@ -1,0 +1,115 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Timers</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.Timers#getTimer_handle <em>Timer handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Timers#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Timers#getPeriod <em>Period</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Timers#getTid <em>Tid</em>}</li>
+ * </ul>
+ *
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage#getTimers()
+ * @model
+ * @generated
+ */
+public interface Timers extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Timer handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timer handle</em>' attribute.
+	 * @see #setTimer_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getTimers_Timer_handle()
+	 * @model
+	 * @generated
+	 */
+	double getTimer_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Timers#getTimer_handle <em>Timer handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timer handle</em>' attribute.
+	 * @see #getTimer_handle()
+	 * @generated
+	 */
+	void setTimer_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timestamp</em>' attribute.
+	 * @see #setTimestamp(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getTimers_Timestamp()
+	 * @model
+	 * @generated
+	 */
+	double getTimestamp();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Timers#getTimestamp <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timestamp</em>' attribute.
+	 * @see #getTimestamp()
+	 * @generated
+	 */
+	void setTimestamp(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Period</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Period</em>' attribute.
+	 * @see #setPeriod(int)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getTimers_Period()
+	 * @model
+	 * @generated
+	 */
+	int getPeriod();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Timers#getPeriod <em>Period</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Period</em>' attribute.
+	 * @see #getPeriod()
+	 * @generated
+	 */
+	void setPeriod(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Tid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tid</em>' attribute.
+	 * @see #setTid(int)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getTimers_Tid()
+	 * @model
+	 * @generated
+	 */
+	int getTid();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Timers#getTid <em>Tid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tid</em>' attribute.
+	 * @see #getTid()
+	 * @generated
+	 */
+	void setTid(int value);
+
+} // Timers

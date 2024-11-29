@@ -1,0 +1,2660 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * @see ROS2DataModelMM.ROS2DataModelMMFactory
+ * @model kind="package"
+ * @generated
+ */
+public interface ROS2DataModelMMPackage extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "ROS2DataModelMM";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "http://www.example.org/ROS2DataModelMM";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "ROS2DataModelMM";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	ROS2DataModelMMPackage eINSTANCE = ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.PublishersImpl <em>Publishers</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.PublishersImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getPublishers()
+	 * @generated
+	 */
+	int PUBLISHERS = 0;
+
+	/**
+	 * The feature id for the '<em><b>Publisher handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISHERS__PUBLISHER_HANDLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISHERS__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISHERS__NODE_HANDLE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Rmw handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISHERS__RMW_HANDLE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Topic name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISHERS__TOPIC_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Depth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISHERS__DEPTH = 5;
+
+	/**
+	 * The number of structural features of the '<em>Publishers</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISHERS_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Publishers</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISHERS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.SubscriptionsImpl <em>Subscriptions</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.SubscriptionsImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getSubscriptions()
+	 * @generated
+	 */
+	int SUBSCRIPTIONS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Subscription name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTIONS__SUBSCRIPTION_NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTIONS__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTIONS__NODE_HANDLE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Depth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTIONS__DEPTH = 3;
+
+	/**
+	 * The feature id for the '<em><b>Rmw handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTIONS__RMW_HANDLE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Publisher handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTIONS__PUBLISHER_HANDLE = 5;
+
+	/**
+	 * The number of structural features of the '<em>Subscriptions</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTIONS_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Subscriptions</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTIONS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.NodesImpl <em>Nodes</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.NodesImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getNodes()
+	 * @generated
+	 */
+	int NODES = 2;
+
+	/**
+	 * The feature id for the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODES__NODE_HANDLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODES__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Tid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODES__TID = 2;
+
+	/**
+	 * The feature id for the '<em><b>Rmw handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODES__RMW_HANDLE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODES__NAME = 4;
+
+	/**
+	 * The number of structural features of the '<em>Nodes</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODES_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>Nodes</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODES_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.ContextsImpl <em>Contexts</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.ContextsImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getContexts()
+	 * @generated
+	 */
+	int CONTEXTS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Context Handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTEXTS__CONTEXT_HANDLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTEXTS__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Pid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTEXTS__PID = 2;
+
+	/**
+	 * The feature id for the '<em><b>Version</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTEXTS__VERSION = 3;
+
+	/**
+	 * The number of structural features of the '<em>Contexts</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTEXTS_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Contexts</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTEXTS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.Subscription_objectsImpl <em>Subscription objects</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.Subscription_objectsImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getSubscription_objects()
+	 * @generated
+	 */
+	int SUBSCRIPTION_OBJECTS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Subscription</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTION_OBJECTS__SUBSCRIPTION = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTION_OBJECTS__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Subscription handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTION_OBJECTS__SUBSCRIPTION_HANDLE = 2;
+
+	/**
+	 * The number of structural features of the '<em>Subscription objects</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTION_OBJECTS_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Subscription objects</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIPTION_OBJECTS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.ServicesImpl <em>Services</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.ServicesImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getServices()
+	 * @generated
+	 */
+	int SERVICES = 5;
+
+	/**
+	 * The feature id for the '<em><b>Service handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICES__SERVICE_HANDLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICES__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICES__NODE_HANDLE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Rmw handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICES__RMW_HANDLE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Service name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICES__SERVICE_NAME = 4;
+
+	/**
+	 * The number of structural features of the '<em>Services</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICES_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>Services</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICES_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.TimersImpl <em>Timers</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.TimersImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getTimers()
+	 * @generated
+	 */
+	int TIMERS = 6;
+
+	/**
+	 * The feature id for the '<em><b>Timer handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMERS__TIMER_HANDLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMERS__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Period</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMERS__PERIOD = 2;
+
+	/**
+	 * The feature id for the '<em><b>Tid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMERS__TID = 3;
+
+	/**
+	 * The number of structural features of the '<em>Timers</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMERS_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Timers</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMERS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.ClientsImpl <em>Clients</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.ClientsImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getClients()
+	 * @generated
+	 */
+	int CLIENTS = 7;
+
+	/**
+	 * The feature id for the '<em><b>Client handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLIENTS__CLIENT_HANDLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLIENTS__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLIENTS__NODE_HANDLE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Rmw handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLIENTS__RMW_HANDLE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Service name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLIENTS__SERVICE_NAME = 4;
+
+	/**
+	 * The number of structural features of the '<em>Clients</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLIENTS_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>Clients</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLIENTS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.TimerNode_linksImpl <em>Timer Node links</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.TimerNode_linksImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getTimerNode_links()
+	 * @generated
+	 */
+	int TIMER_NODE_LINKS = 8;
+
+	/**
+	 * The feature id for the '<em><b>Timer handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMER_NODE_LINKS__TIMER_HANDLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMER_NODE_LINKS__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMER_NODE_LINKS__NODE_HANDLE = 2;
+
+	/**
+	 * The number of structural features of the '<em>Timer Node links</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMER_NODE_LINKS_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Timer Node links</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIMER_NODE_LINKS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.Callback_instancesImpl <em>Callback instances</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.Callback_instancesImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getCallback_instances()
+	 * @generated
+	 */
+	int CALLBACK_INSTANCES = 9;
+
+	/**
+	 * The feature id for the '<em><b>Callback object</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_INSTANCES__CALLBACK_OBJECT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_INSTANCES__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Duration</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_INSTANCES__DURATION = 2;
+
+	/**
+	 * The feature id for the '<em><b>Intra process</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_INSTANCES__INTRA_PROCESS = 3;
+
+	/**
+	 * The number of structural features of the '<em>Callback instances</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_INSTANCES_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Callback instances</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_INSTANCES_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.Publish_instancesImpl <em>Publish instances</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.Publish_instancesImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getPublish_instances()
+	 * @generated
+	 */
+	int PUBLISH_INSTANCES = 10;
+
+	/**
+	 * The feature id for the '<em><b>Publisher handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISH_INSTANCES__PUBLISHER_HANDLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISH_INSTANCES__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISH_INSTANCES__MESSAGE = 2;
+
+	/**
+	 * The number of structural features of the '<em>Publish instances</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISH_INSTANCES_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Publish instances</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLISH_INSTANCES_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.Callback_objectsImpl <em>Callback objects</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.Callback_objectsImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getCallback_objects()
+	 * @generated
+	 */
+	int CALLBACK_OBJECTS = 11;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_OBJECTS__REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_OBJECTS__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Callback object</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_OBJECTS__CALLBACK_OBJECT = 2;
+
+	/**
+	 * The number of structural features of the '<em>Callback objects</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_OBJECTS_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Callback objects</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_OBJECTS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.Callback_symbolsImpl <em>Callback symbols</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.Callback_symbolsImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getCallback_symbols()
+	 * @generated
+	 */
+	int CALLBACK_SYMBOLS = 12;
+
+	/**
+	 * The feature id for the '<em><b>Callback object</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_SYMBOLS__CALLBACK_OBJECT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_SYMBOLS__TIMESTAMP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_SYMBOLS__SYMBOL = 2;
+
+	/**
+	 * The number of structural features of the '<em>Callback symbols</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_SYMBOLS_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Callback symbols</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALLBACK_SYMBOLS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link ROS2DataModelMM.impl.SystemImpl <em>System</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ROS2DataModelMM.impl.SystemImpl
+	 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getSystem()
+	 * @generated
+	 */
+	int SYSTEM = 13;
+
+	/**
+	 * The feature id for the '<em><b>Publish instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__PUBLISH_INSTANCES = 0;
+
+	/**
+	 * The feature id for the '<em><b>Callback instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__CALLBACK_INSTANCES = 1;
+
+	/**
+	 * The feature id for the '<em><b>Subscription objects</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__SUBSCRIPTION_OBJECTS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Timers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__TIMERS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Timernode links</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__TIMERNODE_LINKS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Callback objects</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__CALLBACK_OBJECTS = 5;
+
+	/**
+	 * The feature id for the '<em><b>Subscriptions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__SUBSCRIPTIONS = 6;
+
+	/**
+	 * The feature id for the '<em><b>Callback symbols</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__CALLBACK_SYMBOLS = 7;
+
+	/**
+	 * The feature id for the '<em><b>Services</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__SERVICES = 8;
+
+	/**
+	 * The feature id for the '<em><b>Publishers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__PUBLISHERS = 9;
+
+	/**
+	 * The feature id for the '<em><b>Nodes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__NODES = 10;
+
+	/**
+	 * The feature id for the '<em><b>Contexts</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__CONTEXTS = 11;
+
+	/**
+	 * The feature id for the '<em><b>Clients</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__CLIENTS = 12;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__NAME = 13;
+
+	/**
+	 * The number of structural features of the '<em>System</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_FEATURE_COUNT = 14;
+
+	/**
+	 * The number of operations of the '<em>System</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_OPERATION_COUNT = 0;
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Publishers <em>Publishers</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Publishers</em>'.
+	 * @see ROS2DataModelMM.Publishers
+	 * @generated
+	 */
+	EClass getPublishers();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Publishers#getPublisher_handle <em>Publisher handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Publisher handle</em>'.
+	 * @see ROS2DataModelMM.Publishers#getPublisher_handle()
+	 * @see #getPublishers()
+	 * @generated
+	 */
+	EAttribute getPublishers_Publisher_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Publishers#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Publishers#getTimestamp()
+	 * @see #getPublishers()
+	 * @generated
+	 */
+	EAttribute getPublishers_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Publishers#getNode_handle <em>Node handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node handle</em>'.
+	 * @see ROS2DataModelMM.Publishers#getNode_handle()
+	 * @see #getPublishers()
+	 * @generated
+	 */
+	EAttribute getPublishers_Node_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Publishers#getRmw_handle <em>Rmw handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rmw handle</em>'.
+	 * @see ROS2DataModelMM.Publishers#getRmw_handle()
+	 * @see #getPublishers()
+	 * @generated
+	 */
+	EAttribute getPublishers_Rmw_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Publishers#getTopic_name <em>Topic name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Topic name</em>'.
+	 * @see ROS2DataModelMM.Publishers#getTopic_name()
+	 * @see #getPublishers()
+	 * @generated
+	 */
+	EAttribute getPublishers_Topic_name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Publishers#getDepth <em>Depth</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Depth</em>'.
+	 * @see ROS2DataModelMM.Publishers#getDepth()
+	 * @see #getPublishers()
+	 * @generated
+	 */
+	EAttribute getPublishers_Depth();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Subscriptions <em>Subscriptions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Subscriptions</em>'.
+	 * @see ROS2DataModelMM.Subscriptions
+	 * @generated
+	 */
+	EClass getSubscriptions();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Subscriptions#getSubscription_name <em>Subscription name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Subscription name</em>'.
+	 * @see ROS2DataModelMM.Subscriptions#getSubscription_name()
+	 * @see #getSubscriptions()
+	 * @generated
+	 */
+	EAttribute getSubscriptions_Subscription_name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Subscriptions#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Subscriptions#getTimestamp()
+	 * @see #getSubscriptions()
+	 * @generated
+	 */
+	EAttribute getSubscriptions_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Subscriptions#getNode_handle <em>Node handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node handle</em>'.
+	 * @see ROS2DataModelMM.Subscriptions#getNode_handle()
+	 * @see #getSubscriptions()
+	 * @generated
+	 */
+	EAttribute getSubscriptions_Node_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Subscriptions#getDepth <em>Depth</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Depth</em>'.
+	 * @see ROS2DataModelMM.Subscriptions#getDepth()
+	 * @see #getSubscriptions()
+	 * @generated
+	 */
+	EAttribute getSubscriptions_Depth();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Subscriptions#getRmw_handle <em>Rmw handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rmw handle</em>'.
+	 * @see ROS2DataModelMM.Subscriptions#getRmw_handle()
+	 * @see #getSubscriptions()
+	 * @generated
+	 */
+	EAttribute getSubscriptions_Rmw_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Subscriptions#getPublisher_handle <em>Publisher handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Publisher handle</em>'.
+	 * @see ROS2DataModelMM.Subscriptions#getPublisher_handle()
+	 * @see #getSubscriptions()
+	 * @generated
+	 */
+	EAttribute getSubscriptions_Publisher_handle();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Nodes <em>Nodes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Nodes</em>'.
+	 * @see ROS2DataModelMM.Nodes
+	 * @generated
+	 */
+	EClass getNodes();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Nodes#getNode_handle <em>Node handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node handle</em>'.
+	 * @see ROS2DataModelMM.Nodes#getNode_handle()
+	 * @see #getNodes()
+	 * @generated
+	 */
+	EAttribute getNodes_Node_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Nodes#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Nodes#getTimestamp()
+	 * @see #getNodes()
+	 * @generated
+	 */
+	EAttribute getNodes_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Nodes#getTid <em>Tid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tid</em>'.
+	 * @see ROS2DataModelMM.Nodes#getTid()
+	 * @see #getNodes()
+	 * @generated
+	 */
+	EAttribute getNodes_Tid();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Nodes#getRmw_handle <em>Rmw handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rmw handle</em>'.
+	 * @see ROS2DataModelMM.Nodes#getRmw_handle()
+	 * @see #getNodes()
+	 * @generated
+	 */
+	EAttribute getNodes_Rmw_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Nodes#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see ROS2DataModelMM.Nodes#getName()
+	 * @see #getNodes()
+	 * @generated
+	 */
+	EAttribute getNodes_Name();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Contexts <em>Contexts</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Contexts</em>'.
+	 * @see ROS2DataModelMM.Contexts
+	 * @generated
+	 */
+	EClass getContexts();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Contexts#getContextHandle <em>Context Handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Context Handle</em>'.
+	 * @see ROS2DataModelMM.Contexts#getContextHandle()
+	 * @see #getContexts()
+	 * @generated
+	 */
+	EAttribute getContexts_ContextHandle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Contexts#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Contexts#getTimestamp()
+	 * @see #getContexts()
+	 * @generated
+	 */
+	EAttribute getContexts_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Contexts#getPid <em>Pid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Pid</em>'.
+	 * @see ROS2DataModelMM.Contexts#getPid()
+	 * @see #getContexts()
+	 * @generated
+	 */
+	EAttribute getContexts_Pid();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Contexts#getVersion <em>Version</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version</em>'.
+	 * @see ROS2DataModelMM.Contexts#getVersion()
+	 * @see #getContexts()
+	 * @generated
+	 */
+	EAttribute getContexts_Version();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Subscription_objects <em>Subscription objects</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Subscription objects</em>'.
+	 * @see ROS2DataModelMM.Subscription_objects
+	 * @generated
+	 */
+	EClass getSubscription_objects();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Subscription_objects#getSubscription <em>Subscription</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Subscription</em>'.
+	 * @see ROS2DataModelMM.Subscription_objects#getSubscription()
+	 * @see #getSubscription_objects()
+	 * @generated
+	 */
+	EAttribute getSubscription_objects_Subscription();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Subscription_objects#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Subscription_objects#getTimestamp()
+	 * @see #getSubscription_objects()
+	 * @generated
+	 */
+	EAttribute getSubscription_objects_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Subscription_objects#getSubscription_handle <em>Subscription handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Subscription handle</em>'.
+	 * @see ROS2DataModelMM.Subscription_objects#getSubscription_handle()
+	 * @see #getSubscription_objects()
+	 * @generated
+	 */
+	EAttribute getSubscription_objects_Subscription_handle();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Services <em>Services</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Services</em>'.
+	 * @see ROS2DataModelMM.Services
+	 * @generated
+	 */
+	EClass getServices();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Services#getService_handle <em>Service handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Service handle</em>'.
+	 * @see ROS2DataModelMM.Services#getService_handle()
+	 * @see #getServices()
+	 * @generated
+	 */
+	EAttribute getServices_Service_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Services#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Services#getTimestamp()
+	 * @see #getServices()
+	 * @generated
+	 */
+	EAttribute getServices_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Services#getNode_handle <em>Node handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node handle</em>'.
+	 * @see ROS2DataModelMM.Services#getNode_handle()
+	 * @see #getServices()
+	 * @generated
+	 */
+	EAttribute getServices_Node_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Services#getRmw_handle <em>Rmw handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rmw handle</em>'.
+	 * @see ROS2DataModelMM.Services#getRmw_handle()
+	 * @see #getServices()
+	 * @generated
+	 */
+	EAttribute getServices_Rmw_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Services#getService_name <em>Service name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Service name</em>'.
+	 * @see ROS2DataModelMM.Services#getService_name()
+	 * @see #getServices()
+	 * @generated
+	 */
+	EAttribute getServices_Service_name();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Timers <em>Timers</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Timers</em>'.
+	 * @see ROS2DataModelMM.Timers
+	 * @generated
+	 */
+	EClass getTimers();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Timers#getTimer_handle <em>Timer handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timer handle</em>'.
+	 * @see ROS2DataModelMM.Timers#getTimer_handle()
+	 * @see #getTimers()
+	 * @generated
+	 */
+	EAttribute getTimers_Timer_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Timers#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Timers#getTimestamp()
+	 * @see #getTimers()
+	 * @generated
+	 */
+	EAttribute getTimers_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Timers#getPeriod <em>Period</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Period</em>'.
+	 * @see ROS2DataModelMM.Timers#getPeriod()
+	 * @see #getTimers()
+	 * @generated
+	 */
+	EAttribute getTimers_Period();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Timers#getTid <em>Tid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tid</em>'.
+	 * @see ROS2DataModelMM.Timers#getTid()
+	 * @see #getTimers()
+	 * @generated
+	 */
+	EAttribute getTimers_Tid();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Clients <em>Clients</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Clients</em>'.
+	 * @see ROS2DataModelMM.Clients
+	 * @generated
+	 */
+	EClass getClients();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Clients#getClient_handle <em>Client handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Client handle</em>'.
+	 * @see ROS2DataModelMM.Clients#getClient_handle()
+	 * @see #getClients()
+	 * @generated
+	 */
+	EAttribute getClients_Client_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Clients#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Clients#getTimestamp()
+	 * @see #getClients()
+	 * @generated
+	 */
+	EAttribute getClients_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Clients#getNode_handle <em>Node handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node handle</em>'.
+	 * @see ROS2DataModelMM.Clients#getNode_handle()
+	 * @see #getClients()
+	 * @generated
+	 */
+	EAttribute getClients_Node_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Clients#getRmw_handle <em>Rmw handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rmw handle</em>'.
+	 * @see ROS2DataModelMM.Clients#getRmw_handle()
+	 * @see #getClients()
+	 * @generated
+	 */
+	EAttribute getClients_Rmw_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Clients#getService_name <em>Service name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Service name</em>'.
+	 * @see ROS2DataModelMM.Clients#getService_name()
+	 * @see #getClients()
+	 * @generated
+	 */
+	EAttribute getClients_Service_name();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.TimerNode_links <em>Timer Node links</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Timer Node links</em>'.
+	 * @see ROS2DataModelMM.TimerNode_links
+	 * @generated
+	 */
+	EClass getTimerNode_links();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.TimerNode_links#getTimer_handle <em>Timer handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timer handle</em>'.
+	 * @see ROS2DataModelMM.TimerNode_links#getTimer_handle()
+	 * @see #getTimerNode_links()
+	 * @generated
+	 */
+	EAttribute getTimerNode_links_Timer_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.TimerNode_links#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.TimerNode_links#getTimestamp()
+	 * @see #getTimerNode_links()
+	 * @generated
+	 */
+	EAttribute getTimerNode_links_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.TimerNode_links#getNode_handle <em>Node handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node handle</em>'.
+	 * @see ROS2DataModelMM.TimerNode_links#getNode_handle()
+	 * @see #getTimerNode_links()
+	 * @generated
+	 */
+	EAttribute getTimerNode_links_Node_handle();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Callback_instances <em>Callback instances</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Callback instances</em>'.
+	 * @see ROS2DataModelMM.Callback_instances
+	 * @generated
+	 */
+	EClass getCallback_instances();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Callback_instances#getCallback_object <em>Callback object</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Callback object</em>'.
+	 * @see ROS2DataModelMM.Callback_instances#getCallback_object()
+	 * @see #getCallback_instances()
+	 * @generated
+	 */
+	EAttribute getCallback_instances_Callback_object();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Callback_instances#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Callback_instances#getTimestamp()
+	 * @see #getCallback_instances()
+	 * @generated
+	 */
+	EAttribute getCallback_instances_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Callback_instances#getDuration <em>Duration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Duration</em>'.
+	 * @see ROS2DataModelMM.Callback_instances#getDuration()
+	 * @see #getCallback_instances()
+	 * @generated
+	 */
+	EAttribute getCallback_instances_Duration();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Callback_instances#isIntra_process <em>Intra process</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Intra process</em>'.
+	 * @see ROS2DataModelMM.Callback_instances#isIntra_process()
+	 * @see #getCallback_instances()
+	 * @generated
+	 */
+	EAttribute getCallback_instances_Intra_process();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Publish_instances <em>Publish instances</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Publish instances</em>'.
+	 * @see ROS2DataModelMM.Publish_instances
+	 * @generated
+	 */
+	EClass getPublish_instances();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Publish_instances#getPublisher_handle <em>Publisher handle</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Publisher handle</em>'.
+	 * @see ROS2DataModelMM.Publish_instances#getPublisher_handle()
+	 * @see #getPublish_instances()
+	 * @generated
+	 */
+	EAttribute getPublish_instances_Publisher_handle();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Publish_instances#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Publish_instances#getTimestamp()
+	 * @see #getPublish_instances()
+	 * @generated
+	 */
+	EAttribute getPublish_instances_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Publish_instances#getMessage <em>Message</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Message</em>'.
+	 * @see ROS2DataModelMM.Publish_instances#getMessage()
+	 * @see #getPublish_instances()
+	 * @generated
+	 */
+	EAttribute getPublish_instances_Message();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Callback_objects <em>Callback objects</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Callback objects</em>'.
+	 * @see ROS2DataModelMM.Callback_objects
+	 * @generated
+	 */
+	EClass getCallback_objects();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Callback_objects#getReference <em>Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Reference</em>'.
+	 * @see ROS2DataModelMM.Callback_objects#getReference()
+	 * @see #getCallback_objects()
+	 * @generated
+	 */
+	EAttribute getCallback_objects_Reference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Callback_objects#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Callback_objects#getTimestamp()
+	 * @see #getCallback_objects()
+	 * @generated
+	 */
+	EAttribute getCallback_objects_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Callback_objects#getCallback_object <em>Callback object</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Callback object</em>'.
+	 * @see ROS2DataModelMM.Callback_objects#getCallback_object()
+	 * @see #getCallback_objects()
+	 * @generated
+	 */
+	EAttribute getCallback_objects_Callback_object();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.Callback_symbols <em>Callback symbols</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Callback symbols</em>'.
+	 * @see ROS2DataModelMM.Callback_symbols
+	 * @generated
+	 */
+	EClass getCallback_symbols();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Callback_symbols#getCallback_object <em>Callback object</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Callback object</em>'.
+	 * @see ROS2DataModelMM.Callback_symbols#getCallback_object()
+	 * @see #getCallback_symbols()
+	 * @generated
+	 */
+	EAttribute getCallback_symbols_Callback_object();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Callback_symbols#getTimestamp <em>Timestamp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timestamp</em>'.
+	 * @see ROS2DataModelMM.Callback_symbols#getTimestamp()
+	 * @see #getCallback_symbols()
+	 * @generated
+	 */
+	EAttribute getCallback_symbols_Timestamp();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.Callback_symbols#getSymbol <em>Symbol</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Symbol</em>'.
+	 * @see ROS2DataModelMM.Callback_symbols#getSymbol()
+	 * @see #getCallback_symbols()
+	 * @generated
+	 */
+	EAttribute getCallback_symbols_Symbol();
+
+	/**
+	 * Returns the meta object for class '{@link ROS2DataModelMM.System <em>System</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>System</em>'.
+	 * @see ROS2DataModelMM.System
+	 * @generated
+	 */
+	EClass getSystem();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getPublish_instances <em>Publish instances</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Publish instances</em>'.
+	 * @see ROS2DataModelMM.System#getPublish_instances()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Publish_instances();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getCallback_instances <em>Callback instances</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Callback instances</em>'.
+	 * @see ROS2DataModelMM.System#getCallback_instances()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Callback_instances();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getSubscription_objects <em>Subscription objects</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Subscription objects</em>'.
+	 * @see ROS2DataModelMM.System#getSubscription_objects()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Subscription_objects();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getTimers <em>Timers</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Timers</em>'.
+	 * @see ROS2DataModelMM.System#getTimers()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Timers();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getTimernode_links <em>Timernode links</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Timernode links</em>'.
+	 * @see ROS2DataModelMM.System#getTimernode_links()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Timernode_links();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getCallback_objects <em>Callback objects</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Callback objects</em>'.
+	 * @see ROS2DataModelMM.System#getCallback_objects()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Callback_objects();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getSubscriptions <em>Subscriptions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Subscriptions</em>'.
+	 * @see ROS2DataModelMM.System#getSubscriptions()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Subscriptions();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getCallback_symbols <em>Callback symbols</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Callback symbols</em>'.
+	 * @see ROS2DataModelMM.System#getCallback_symbols()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Callback_symbols();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getServices <em>Services</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Services</em>'.
+	 * @see ROS2DataModelMM.System#getServices()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Services();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getPublishers <em>Publishers</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Publishers</em>'.
+	 * @see ROS2DataModelMM.System#getPublishers()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Publishers();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getNodes <em>Nodes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Nodes</em>'.
+	 * @see ROS2DataModelMM.System#getNodes()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Nodes();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getContexts <em>Contexts</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Contexts</em>'.
+	 * @see ROS2DataModelMM.System#getContexts()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Contexts();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ROS2DataModelMM.System#getClients <em>Clients</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Clients</em>'.
+	 * @see ROS2DataModelMM.System#getClients()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EReference getSystem_Clients();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ROS2DataModelMM.System#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see ROS2DataModelMM.System#getName()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EAttribute getSystem_Name();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	ROS2DataModelMMFactory getROS2DataModelMMFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.PublishersImpl <em>Publishers</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.PublishersImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getPublishers()
+		 * @generated
+		 */
+		EClass PUBLISHERS = eINSTANCE.getPublishers();
+
+		/**
+		 * The meta object literal for the '<em><b>Publisher handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLISHERS__PUBLISHER_HANDLE = eINSTANCE.getPublishers_Publisher_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLISHERS__TIMESTAMP = eINSTANCE.getPublishers_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Node handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLISHERS__NODE_HANDLE = eINSTANCE.getPublishers_Node_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Rmw handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLISHERS__RMW_HANDLE = eINSTANCE.getPublishers_Rmw_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Topic name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLISHERS__TOPIC_NAME = eINSTANCE.getPublishers_Topic_name();
+
+		/**
+		 * The meta object literal for the '<em><b>Depth</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLISHERS__DEPTH = eINSTANCE.getPublishers_Depth();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.SubscriptionsImpl <em>Subscriptions</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.SubscriptionsImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getSubscriptions()
+		 * @generated
+		 */
+		EClass SUBSCRIPTIONS = eINSTANCE.getSubscriptions();
+
+		/**
+		 * The meta object literal for the '<em><b>Subscription name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBSCRIPTIONS__SUBSCRIPTION_NAME = eINSTANCE.getSubscriptions_Subscription_name();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBSCRIPTIONS__TIMESTAMP = eINSTANCE.getSubscriptions_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Node handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBSCRIPTIONS__NODE_HANDLE = eINSTANCE.getSubscriptions_Node_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Depth</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBSCRIPTIONS__DEPTH = eINSTANCE.getSubscriptions_Depth();
+
+		/**
+		 * The meta object literal for the '<em><b>Rmw handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBSCRIPTIONS__RMW_HANDLE = eINSTANCE.getSubscriptions_Rmw_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Publisher handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBSCRIPTIONS__PUBLISHER_HANDLE = eINSTANCE.getSubscriptions_Publisher_handle();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.NodesImpl <em>Nodes</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.NodesImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getNodes()
+		 * @generated
+		 */
+		EClass NODES = eINSTANCE.getNodes();
+
+		/**
+		 * The meta object literal for the '<em><b>Node handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NODES__NODE_HANDLE = eINSTANCE.getNodes_Node_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NODES__TIMESTAMP = eINSTANCE.getNodes_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Tid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NODES__TID = eINSTANCE.getNodes_Tid();
+
+		/**
+		 * The meta object literal for the '<em><b>Rmw handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NODES__RMW_HANDLE = eINSTANCE.getNodes_Rmw_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NODES__NAME = eINSTANCE.getNodes_Name();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.ContextsImpl <em>Contexts</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.ContextsImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getContexts()
+		 * @generated
+		 */
+		EClass CONTEXTS = eINSTANCE.getContexts();
+
+		/**
+		 * The meta object literal for the '<em><b>Context Handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONTEXTS__CONTEXT_HANDLE = eINSTANCE.getContexts_ContextHandle();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONTEXTS__TIMESTAMP = eINSTANCE.getContexts_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Pid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONTEXTS__PID = eINSTANCE.getContexts_Pid();
+
+		/**
+		 * The meta object literal for the '<em><b>Version</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONTEXTS__VERSION = eINSTANCE.getContexts_Version();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.Subscription_objectsImpl <em>Subscription objects</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.Subscription_objectsImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getSubscription_objects()
+		 * @generated
+		 */
+		EClass SUBSCRIPTION_OBJECTS = eINSTANCE.getSubscription_objects();
+
+		/**
+		 * The meta object literal for the '<em><b>Subscription</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBSCRIPTION_OBJECTS__SUBSCRIPTION = eINSTANCE.getSubscription_objects_Subscription();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBSCRIPTION_OBJECTS__TIMESTAMP = eINSTANCE.getSubscription_objects_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Subscription handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBSCRIPTION_OBJECTS__SUBSCRIPTION_HANDLE = eINSTANCE.getSubscription_objects_Subscription_handle();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.ServicesImpl <em>Services</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.ServicesImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getServices()
+		 * @generated
+		 */
+		EClass SERVICES = eINSTANCE.getServices();
+
+		/**
+		 * The meta object literal for the '<em><b>Service handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICES__SERVICE_HANDLE = eINSTANCE.getServices_Service_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICES__TIMESTAMP = eINSTANCE.getServices_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Node handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICES__NODE_HANDLE = eINSTANCE.getServices_Node_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Rmw handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICES__RMW_HANDLE = eINSTANCE.getServices_Rmw_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Service name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICES__SERVICE_NAME = eINSTANCE.getServices_Service_name();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.TimersImpl <em>Timers</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.TimersImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getTimers()
+		 * @generated
+		 */
+		EClass TIMERS = eINSTANCE.getTimers();
+
+		/**
+		 * The meta object literal for the '<em><b>Timer handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TIMERS__TIMER_HANDLE = eINSTANCE.getTimers_Timer_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TIMERS__TIMESTAMP = eINSTANCE.getTimers_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Period</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TIMERS__PERIOD = eINSTANCE.getTimers_Period();
+
+		/**
+		 * The meta object literal for the '<em><b>Tid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TIMERS__TID = eINSTANCE.getTimers_Tid();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.ClientsImpl <em>Clients</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.ClientsImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getClients()
+		 * @generated
+		 */
+		EClass CLIENTS = eINSTANCE.getClients();
+
+		/**
+		 * The meta object literal for the '<em><b>Client handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLIENTS__CLIENT_HANDLE = eINSTANCE.getClients_Client_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLIENTS__TIMESTAMP = eINSTANCE.getClients_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Node handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLIENTS__NODE_HANDLE = eINSTANCE.getClients_Node_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Rmw handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLIENTS__RMW_HANDLE = eINSTANCE.getClients_Rmw_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Service name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLIENTS__SERVICE_NAME = eINSTANCE.getClients_Service_name();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.TimerNode_linksImpl <em>Timer Node links</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.TimerNode_linksImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getTimerNode_links()
+		 * @generated
+		 */
+		EClass TIMER_NODE_LINKS = eINSTANCE.getTimerNode_links();
+
+		/**
+		 * The meta object literal for the '<em><b>Timer handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TIMER_NODE_LINKS__TIMER_HANDLE = eINSTANCE.getTimerNode_links_Timer_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TIMER_NODE_LINKS__TIMESTAMP = eINSTANCE.getTimerNode_links_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Node handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TIMER_NODE_LINKS__NODE_HANDLE = eINSTANCE.getTimerNode_links_Node_handle();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.Callback_instancesImpl <em>Callback instances</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.Callback_instancesImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getCallback_instances()
+		 * @generated
+		 */
+		EClass CALLBACK_INSTANCES = eINSTANCE.getCallback_instances();
+
+		/**
+		 * The meta object literal for the '<em><b>Callback object</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALLBACK_INSTANCES__CALLBACK_OBJECT = eINSTANCE.getCallback_instances_Callback_object();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALLBACK_INSTANCES__TIMESTAMP = eINSTANCE.getCallback_instances_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Duration</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALLBACK_INSTANCES__DURATION = eINSTANCE.getCallback_instances_Duration();
+
+		/**
+		 * The meta object literal for the '<em><b>Intra process</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALLBACK_INSTANCES__INTRA_PROCESS = eINSTANCE.getCallback_instances_Intra_process();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.Publish_instancesImpl <em>Publish instances</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.Publish_instancesImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getPublish_instances()
+		 * @generated
+		 */
+		EClass PUBLISH_INSTANCES = eINSTANCE.getPublish_instances();
+
+		/**
+		 * The meta object literal for the '<em><b>Publisher handle</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLISH_INSTANCES__PUBLISHER_HANDLE = eINSTANCE.getPublish_instances_Publisher_handle();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLISH_INSTANCES__TIMESTAMP = eINSTANCE.getPublish_instances_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Message</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLISH_INSTANCES__MESSAGE = eINSTANCE.getPublish_instances_Message();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.Callback_objectsImpl <em>Callback objects</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.Callback_objectsImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getCallback_objects()
+		 * @generated
+		 */
+		EClass CALLBACK_OBJECTS = eINSTANCE.getCallback_objects();
+
+		/**
+		 * The meta object literal for the '<em><b>Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALLBACK_OBJECTS__REFERENCE = eINSTANCE.getCallback_objects_Reference();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALLBACK_OBJECTS__TIMESTAMP = eINSTANCE.getCallback_objects_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Callback object</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALLBACK_OBJECTS__CALLBACK_OBJECT = eINSTANCE.getCallback_objects_Callback_object();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.Callback_symbolsImpl <em>Callback symbols</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.Callback_symbolsImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getCallback_symbols()
+		 * @generated
+		 */
+		EClass CALLBACK_SYMBOLS = eINSTANCE.getCallback_symbols();
+
+		/**
+		 * The meta object literal for the '<em><b>Callback object</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALLBACK_SYMBOLS__CALLBACK_OBJECT = eINSTANCE.getCallback_symbols_Callback_object();
+
+		/**
+		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALLBACK_SYMBOLS__TIMESTAMP = eINSTANCE.getCallback_symbols_Timestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Symbol</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALLBACK_SYMBOLS__SYMBOL = eINSTANCE.getCallback_symbols_Symbol();
+
+		/**
+		 * The meta object literal for the '{@link ROS2DataModelMM.impl.SystemImpl <em>System</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ROS2DataModelMM.impl.SystemImpl
+		 * @see ROS2DataModelMM.impl.ROS2DataModelMMPackageImpl#getSystem()
+		 * @generated
+		 */
+		EClass SYSTEM = eINSTANCE.getSystem();
+
+		/**
+		 * The meta object literal for the '<em><b>Publish instances</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__PUBLISH_INSTANCES = eINSTANCE.getSystem_Publish_instances();
+
+		/**
+		 * The meta object literal for the '<em><b>Callback instances</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__CALLBACK_INSTANCES = eINSTANCE.getSystem_Callback_instances();
+
+		/**
+		 * The meta object literal for the '<em><b>Subscription objects</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__SUBSCRIPTION_OBJECTS = eINSTANCE.getSystem_Subscription_objects();
+
+		/**
+		 * The meta object literal for the '<em><b>Timers</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__TIMERS = eINSTANCE.getSystem_Timers();
+
+		/**
+		 * The meta object literal for the '<em><b>Timernode links</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__TIMERNODE_LINKS = eINSTANCE.getSystem_Timernode_links();
+
+		/**
+		 * The meta object literal for the '<em><b>Callback objects</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__CALLBACK_OBJECTS = eINSTANCE.getSystem_Callback_objects();
+
+		/**
+		 * The meta object literal for the '<em><b>Subscriptions</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__SUBSCRIPTIONS = eINSTANCE.getSystem_Subscriptions();
+
+		/**
+		 * The meta object literal for the '<em><b>Callback symbols</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__CALLBACK_SYMBOLS = eINSTANCE.getSystem_Callback_symbols();
+
+		/**
+		 * The meta object literal for the '<em><b>Services</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__SERVICES = eINSTANCE.getSystem_Services();
+
+		/**
+		 * The meta object literal for the '<em><b>Publishers</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__PUBLISHERS = eINSTANCE.getSystem_Publishers();
+
+		/**
+		 * The meta object literal for the '<em><b>Nodes</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__NODES = eINSTANCE.getSystem_Nodes();
+
+		/**
+		 * The meta object literal for the '<em><b>Contexts</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__CONTEXTS = eINSTANCE.getSystem_Contexts();
+
+		/**
+		 * The meta object literal for the '<em><b>Clients</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM__CLIENTS = eINSTANCE.getSystem_Clients();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SYSTEM__NAME = eINSTANCE.getSystem_Name();
+
+	}
+
+} //ROS2DataModelMMPackage

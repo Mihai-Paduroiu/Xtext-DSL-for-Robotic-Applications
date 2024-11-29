@@ -1,0 +1,94 @@
+/**
+ */
+package secundproiectEcore;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Book</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link secundproiectEcore.Book#getTitle <em>Title</em>}</li>
+ *   <li>{@link secundproiectEcore.Book#getPages <em>Pages</em>}</li>
+ *   <li>{@link secundproiectEcore.Book#getAuthor <em>Author</em>}</li>
+ * </ul>
+ *
+ * @see secundproiectEcore.SecundproiectEcorePackage#getBook()
+ * @model
+ * @generated
+ */
+public interface Book extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Title</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Title</em>' attribute.
+	 * @see #setTitle(String)
+	 * @see secundproiectEcore.SecundproiectEcorePackage#getBook_Title()
+	 * @model required="true"
+	 * @generated
+	 */
+	String getTitle();
+
+	/**
+	 * Sets the value of the '{@link secundproiectEcore.Book#getTitle <em>Title</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Title</em>' attribute.
+	 * @see #getTitle()
+	 * @generated
+	 */
+	void setTitle(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Pages</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Pages</em>' attribute.
+	 * @see #setPages(int)
+	 * @see secundproiectEcore.SecundproiectEcorePackage#getBook_Pages()
+	 * @model required="true"
+	 * @generated
+	 */
+	int getPages();
+
+	/**
+	 * Sets the value of the '{@link secundproiectEcore.Book#getPages <em>Pages</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Pages</em>' attribute.
+	 * @see #getPages()
+	 * @generated
+	 */
+	void setPages(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Author</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link secundproiectEcore.Writer#getBook <em>Book</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Author</em>' reference.
+	 * @see #setAuthor(Writer)
+	 * @see secundproiectEcore.SecundproiectEcorePackage#getBook_Author()
+	 * @see secundproiectEcore.Writer#getBook
+	 * @model opposite="book"
+	 * @generated
+	 */
+	Writer getAuthor();
+
+	/**
+	 * Sets the value of the '{@link secundproiectEcore.Book#getAuthor <em>Author</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Author</em>' reference.
+	 * @see #getAuthor()
+	 * @generated
+	 */
+	void setAuthor(Writer value);
+
+} // Book

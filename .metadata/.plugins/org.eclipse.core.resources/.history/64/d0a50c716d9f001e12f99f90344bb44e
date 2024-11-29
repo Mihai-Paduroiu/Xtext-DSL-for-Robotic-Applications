@@ -1,0 +1,161 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Publishers</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.Publishers#getPublisher_handle <em>Publisher handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Publishers#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Publishers#getNode_handle <em>Node handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Publishers#getRmw_handle <em>Rmw handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Publishers#getTopic_name <em>Topic name</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Publishers#getDepth <em>Depth</em>}</li>
+ * </ul>
+ *
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage#getPublishers()
+ * @model
+ * @generated
+ */
+public interface Publishers extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Publisher handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Publisher handle</em>' attribute.
+	 * @see #setPublisher_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getPublishers_Publisher_handle()
+	 * @model
+	 * @generated
+	 */
+	double getPublisher_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Publishers#getPublisher_handle <em>Publisher handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Publisher handle</em>' attribute.
+	 * @see #getPublisher_handle()
+	 * @generated
+	 */
+	void setPublisher_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timestamp</em>' attribute.
+	 * @see #setTimestamp(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getPublishers_Timestamp()
+	 * @model
+	 * @generated
+	 */
+	String getTimestamp();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Publishers#getTimestamp <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timestamp</em>' attribute.
+	 * @see #getTimestamp()
+	 * @generated
+	 */
+	void setTimestamp(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Node handle</em>' attribute.
+	 * @see #setNode_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getPublishers_Node_handle()
+	 * @model
+	 * @generated
+	 */
+	double getNode_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Publishers#getNode_handle <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Node handle</em>' attribute.
+	 * @see #getNode_handle()
+	 * @generated
+	 */
+	void setNode_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Rmw handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rmw handle</em>' attribute.
+	 * @see #setRmw_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getPublishers_Rmw_handle()
+	 * @model
+	 * @generated
+	 */
+	double getRmw_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Publishers#getRmw_handle <em>Rmw handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rmw handle</em>' attribute.
+	 * @see #getRmw_handle()
+	 * @generated
+	 */
+	void setRmw_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Topic name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Topic name</em>' attribute.
+	 * @see #setTopic_name(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getPublishers_Topic_name()
+	 * @model
+	 * @generated
+	 */
+	String getTopic_name();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Publishers#getTopic_name <em>Topic name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Topic name</em>' attribute.
+	 * @see #getTopic_name()
+	 * @generated
+	 */
+	void setTopic_name(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Depth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Depth</em>' attribute.
+	 * @see #setDepth(int)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getPublishers_Depth()
+	 * @model
+	 * @generated
+	 */
+	int getDepth();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Publishers#getDepth <em>Depth</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Depth</em>' attribute.
+	 * @see #getDepth()
+	 * @generated
+	 */
+	void setDepth(int value);
+
+} // Publishers

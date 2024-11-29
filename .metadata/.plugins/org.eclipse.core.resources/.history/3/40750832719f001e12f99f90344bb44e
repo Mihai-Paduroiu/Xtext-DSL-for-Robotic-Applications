@@ -1,0 +1,222 @@
+/**
+ */
+package nUMERGEFRATE.impl;
+
+import nUMERGEFRATE.D;
+import nUMERGEFRATE.NUMERGEFRATEPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>D</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link nUMERGEFRATE.impl.DImpl#getNume <em>Nume</em>}</li>
+ *   <li>{@link nUMERGEFRATE.impl.DImpl#getVarsta <em>Varsta</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class DImpl extends MinimalEObjectImpl.Container implements D {
+	/**
+	 * The default value of the '{@link #getNume() <em>Nume</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNume()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NUME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getNume() <em>Nume</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNume()
+	 * @generated
+	 * @ordered
+	 */
+	protected String nume = NUME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getVarsta() <em>Varsta</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVarsta()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int VARSTA_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getVarsta() <em>Varsta</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVarsta()
+	 * @generated
+	 * @ordered
+	 */
+	protected int varsta = VARSTA_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return NUMERGEFRATEPackage.Literals.D;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getNume() {
+		return nume;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setNume(String newNume) {
+		String oldNume = nume;
+		nume = newNume;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, NUMERGEFRATEPackage.D__NUME, oldNume, nume));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int getVarsta() {
+		return varsta;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setVarsta(int newVarsta) {
+		int oldVarsta = varsta;
+		varsta = newVarsta;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, NUMERGEFRATEPackage.D__VARSTA, oldVarsta, varsta));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case NUMERGEFRATEPackage.D__NUME:
+			return getNume();
+		case NUMERGEFRATEPackage.D__VARSTA:
+			return getVarsta();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case NUMERGEFRATEPackage.D__NUME:
+			setNume((String) newValue);
+			return;
+		case NUMERGEFRATEPackage.D__VARSTA:
+			setVarsta((Integer) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case NUMERGEFRATEPackage.D__NUME:
+			setNume(NUME_EDEFAULT);
+			return;
+		case NUMERGEFRATEPackage.D__VARSTA:
+			setVarsta(VARSTA_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case NUMERGEFRATEPackage.D__NUME:
+			return NUME_EDEFAULT == null ? nume != null : !NUME_EDEFAULT.equals(nume);
+		case NUMERGEFRATEPackage.D__VARSTA:
+			return varsta != VARSTA_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (Nume: ");
+		result.append(nume);
+		result.append(", Varsta: ");
+		result.append(varsta);
+		result.append(')');
+		return result.toString();
+	}
+
+} //DImpl

@@ -1,0 +1,275 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+import ROS2DataModelMM.TimerNode_links;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Timer Node links</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.impl.TimerNode_linksImpl#getTimer_handle <em>Timer handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.TimerNode_linksImpl#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.TimerNode_linksImpl#getNode_handle <em>Node handle</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class TimerNode_linksImpl extends MinimalEObjectImpl.Container implements TimerNode_links {
+	/**
+	 * The default value of the '{@link #getTimer_handle() <em>Timer handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimer_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double TIMER_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getTimer_handle() <em>Timer handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimer_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double timer_handle = TIMER_HANDLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TIMESTAMP_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected String timestamp = TIMESTAMP_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getNode_handle() <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNode_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double NODE_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getNode_handle() <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNode_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double node_handle = NODE_HANDLE_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TimerNode_linksImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ROS2DataModelMMPackage.Literals.TIMER_NODE_LINKS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getTimer_handle() {
+		return timer_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTimer_handle(double newTimer_handle) {
+		double oldTimer_handle = timer_handle;
+		timer_handle = newTimer_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.TIMER_NODE_LINKS__TIMER_HANDLE,
+					oldTimer_handle, timer_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTimestamp() {
+		return timestamp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTimestamp(String newTimestamp) {
+		String oldTimestamp = timestamp;
+		timestamp = newTimestamp;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.TIMER_NODE_LINKS__TIMESTAMP,
+					oldTimestamp, timestamp));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getNode_handle() {
+		return node_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNode_handle(double newNode_handle) {
+		double oldNode_handle = node_handle;
+		node_handle = newNode_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.TIMER_NODE_LINKS__NODE_HANDLE,
+					oldNode_handle, node_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__TIMER_HANDLE:
+			return getTimer_handle();
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__TIMESTAMP:
+			return getTimestamp();
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__NODE_HANDLE:
+			return getNode_handle();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__TIMER_HANDLE:
+			setTimer_handle((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__TIMESTAMP:
+			setTimestamp((String) newValue);
+			return;
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__NODE_HANDLE:
+			setNode_handle((Double) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__TIMER_HANDLE:
+			setTimer_handle(TIMER_HANDLE_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__TIMESTAMP:
+			setTimestamp(TIMESTAMP_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__NODE_HANDLE:
+			setNode_handle(NODE_HANDLE_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__TIMER_HANDLE:
+			return timer_handle != TIMER_HANDLE_EDEFAULT;
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__TIMESTAMP:
+			return TIMESTAMP_EDEFAULT == null ? timestamp != null : !TIMESTAMP_EDEFAULT.equals(timestamp);
+		case ROS2DataModelMMPackage.TIMER_NODE_LINKS__NODE_HANDLE:
+			return node_handle != NODE_HANDLE_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (timer_handle: ");
+		result.append(timer_handle);
+		result.append(", timestamp: ");
+		result.append(timestamp);
+		result.append(", node_handle: ");
+		result.append(node_handle);
+		result.append(')');
+		return result.toString();
+	}
+
+} //TimerNode_linksImpl

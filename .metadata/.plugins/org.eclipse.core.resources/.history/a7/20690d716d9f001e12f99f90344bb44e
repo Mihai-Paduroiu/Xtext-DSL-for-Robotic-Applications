@@ -1,0 +1,161 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Subscriptions</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.Subscriptions#getSubscription_name <em>Subscription name</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Subscriptions#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Subscriptions#getNode_handle <em>Node handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Subscriptions#getDepth <em>Depth</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Subscriptions#getRmw_handle <em>Rmw handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Subscriptions#getPublisher_handle <em>Publisher handle</em>}</li>
+ * </ul>
+ *
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscriptions()
+ * @model
+ * @generated
+ */
+public interface Subscriptions extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Subscription name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Subscription name</em>' attribute.
+	 * @see #setSubscription_name(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscriptions_Subscription_name()
+	 * @model
+	 * @generated
+	 */
+	String getSubscription_name();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Subscriptions#getSubscription_name <em>Subscription name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Subscription name</em>' attribute.
+	 * @see #getSubscription_name()
+	 * @generated
+	 */
+	void setSubscription_name(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timestamp</em>' attribute.
+	 * @see #setTimestamp(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscriptions_Timestamp()
+	 * @model
+	 * @generated
+	 */
+	double getTimestamp();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Subscriptions#getTimestamp <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timestamp</em>' attribute.
+	 * @see #getTimestamp()
+	 * @generated
+	 */
+	void setTimestamp(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Node handle</em>' attribute.
+	 * @see #setNode_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscriptions_Node_handle()
+	 * @model
+	 * @generated
+	 */
+	double getNode_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Subscriptions#getNode_handle <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Node handle</em>' attribute.
+	 * @see #getNode_handle()
+	 * @generated
+	 */
+	void setNode_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Depth</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Depth</em>' attribute.
+	 * @see #setDepth(int)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscriptions_Depth()
+	 * @model
+	 * @generated
+	 */
+	int getDepth();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Subscriptions#getDepth <em>Depth</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Depth</em>' attribute.
+	 * @see #getDepth()
+	 * @generated
+	 */
+	void setDepth(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Rmw handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rmw handle</em>' attribute.
+	 * @see #setRmw_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscriptions_Rmw_handle()
+	 * @model
+	 * @generated
+	 */
+	double getRmw_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Subscriptions#getRmw_handle <em>Rmw handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rmw handle</em>' attribute.
+	 * @see #getRmw_handle()
+	 * @generated
+	 */
+	void setRmw_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Publisher handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Publisher handle</em>' attribute.
+	 * @see #setPublisher_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getSubscriptions_Publisher_handle()
+	 * @model
+	 * @generated
+	 */
+	double getPublisher_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Subscriptions#getPublisher_handle <em>Publisher handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Publisher handle</em>' attribute.
+	 * @see #getPublisher_handle()
+	 * @generated
+	 */
+	void setPublisher_handle(double value);
+
+} // Subscriptions

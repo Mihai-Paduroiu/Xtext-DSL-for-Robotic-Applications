@@ -1,0 +1,330 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.Callback_instances;
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Callback instances</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.impl.Callback_instancesImpl#getCallback_object <em>Callback object</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.Callback_instancesImpl#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.Callback_instancesImpl#getDuration <em>Duration</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.Callback_instancesImpl#isIntra_process <em>Intra process</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class Callback_instancesImpl extends MinimalEObjectImpl.Container implements Callback_instances {
+	/**
+	 * The default value of the '{@link #getCallback_object() <em>Callback object</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCallback_object()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double CALLBACK_OBJECT_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getCallback_object() <em>Callback object</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCallback_object()
+	 * @generated
+	 * @ordered
+	 */
+	protected double callback_object = CALLBACK_OBJECT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TIMESTAMP_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected String timestamp = TIMESTAMP_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDuration() <em>Duration</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDuration()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int DURATION_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getDuration() <em>Duration</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDuration()
+	 * @generated
+	 * @ordered
+	 */
+	protected int duration = DURATION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isIntra_process() <em>Intra process</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isIntra_process()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean INTRA_PROCESS_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isIntra_process() <em>Intra process</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isIntra_process()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean intra_process = INTRA_PROCESS_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Callback_instancesImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ROS2DataModelMMPackage.Literals.CALLBACK_INSTANCES;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getCallback_object() {
+		return callback_object;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCallback_object(double newCallback_object) {
+		double oldCallback_object = callback_object;
+		callback_object = newCallback_object;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					ROS2DataModelMMPackage.CALLBACK_INSTANCES__CALLBACK_OBJECT, oldCallback_object, callback_object));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTimestamp() {
+		return timestamp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTimestamp(String newTimestamp) {
+		String oldTimestamp = timestamp;
+		timestamp = newTimestamp;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CALLBACK_INSTANCES__TIMESTAMP,
+					oldTimestamp, timestamp));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getDuration() {
+		return duration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDuration(int newDuration) {
+		int oldDuration = duration;
+		duration = newDuration;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.CALLBACK_INSTANCES__DURATION,
+					oldDuration, duration));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isIntra_process() {
+		return intra_process;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIntra_process(boolean newIntra_process) {
+		boolean oldIntra_process = intra_process;
+		intra_process = newIntra_process;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					ROS2DataModelMMPackage.CALLBACK_INSTANCES__INTRA_PROCESS, oldIntra_process, intra_process));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__CALLBACK_OBJECT:
+			return getCallback_object();
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__TIMESTAMP:
+			return getTimestamp();
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__DURATION:
+			return getDuration();
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__INTRA_PROCESS:
+			return isIntra_process();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__CALLBACK_OBJECT:
+			setCallback_object((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__TIMESTAMP:
+			setTimestamp((String) newValue);
+			return;
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__DURATION:
+			setDuration((Integer) newValue);
+			return;
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__INTRA_PROCESS:
+			setIntra_process((Boolean) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__CALLBACK_OBJECT:
+			setCallback_object(CALLBACK_OBJECT_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__TIMESTAMP:
+			setTimestamp(TIMESTAMP_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__DURATION:
+			setDuration(DURATION_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__INTRA_PROCESS:
+			setIntra_process(INTRA_PROCESS_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__CALLBACK_OBJECT:
+			return callback_object != CALLBACK_OBJECT_EDEFAULT;
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__TIMESTAMP:
+			return TIMESTAMP_EDEFAULT == null ? timestamp != null : !TIMESTAMP_EDEFAULT.equals(timestamp);
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__DURATION:
+			return duration != DURATION_EDEFAULT;
+		case ROS2DataModelMMPackage.CALLBACK_INSTANCES__INTRA_PROCESS:
+			return intra_process != INTRA_PROCESS_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (callback_object: ");
+		result.append(callback_object);
+		result.append(", timestamp: ");
+		result.append(timestamp);
+		result.append(", duration: ");
+		result.append(duration);
+		result.append(", intra_process: ");
+		result.append(intra_process);
+		result.append(')');
+		return result.toString();
+	}
+
+} //Callback_instancesImpl

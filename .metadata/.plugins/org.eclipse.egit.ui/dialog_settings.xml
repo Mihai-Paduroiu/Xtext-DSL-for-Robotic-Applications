@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/altran-mde/xtext-sirius-integration/tree/c53701dc9a45d91d1478d09953e63f1ee1acba45"/>
+		<item value="https://github.com/altran-mde/xtext-sirius-integration/blob/c53701dc9a45d91d1478d09953e63f1ee1acba45/doc/userguide/xtext-sirius-userguide.adoc#L4"/>
+		<item value="https://github.com/t-chiang/xtext-sirius-integration"/>
+	</list>
+	<section name="SmartImportGitWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="282"/>
+		<item key="DIALOG_Y_ORIGIN" value="189"/>
+		<item key="DIALOG_WIDTH" value="1467"/>
+		<item key="DIALOG_HEIGHT" value="627"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

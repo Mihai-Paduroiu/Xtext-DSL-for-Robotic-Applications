@@ -1,0 +1,137 @@
+/**
+ */
+package nUMERGEFRATE.impl;
+
+import nUMERGEFRATE.*;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Factory</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class NUMERGEFRATEFactoryImpl extends EFactoryImpl implements NUMERGEFRATEFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static NUMERGEFRATEFactory init() {
+		try {
+			NUMERGEFRATEFactory theNUMERGEFRATEFactory = (NUMERGEFRATEFactory) EPackage.Registry.INSTANCE
+					.getEFactory(NUMERGEFRATEPackage.eNS_URI);
+			if (theNUMERGEFRATEFactory != null) {
+				return theNUMERGEFRATEFactory;
+			}
+		} catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new NUMERGEFRATEFactoryImpl();
+	}
+
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NUMERGEFRATEFactoryImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+		case NUMERGEFRATEPackage.A:
+			return createA();
+		case NUMERGEFRATEPackage.B:
+			return createB();
+		case NUMERGEFRATEPackage.C:
+			return createC();
+		case NUMERGEFRATEPackage.D:
+			return createD();
+		default:
+			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public A createA() {
+		AImpl a = new AImpl();
+		return a;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public B createB() {
+		BImpl b = new BImpl();
+		return b;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public C createC() {
+		CImpl c = new CImpl();
+		return c;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public D createD() {
+		DImpl d = new DImpl();
+		return d;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NUMERGEFRATEPackage getNUMERGEFRATEPackage() {
+		return (NUMERGEFRATEPackage) getEPackage();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static NUMERGEFRATEPackage getPackage() {
+		return NUMERGEFRATEPackage.eINSTANCE;
+	}
+
+} //NUMERGEFRATEFactoryImpl

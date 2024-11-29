@@ -1,0 +1,119 @@
+/**
+ */
+package nUMERGEFRATE;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>A</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link nUMERGEFRATE.A#getNume <em>Nume</em>}</li>
+ *   <li>{@link nUMERGEFRATE.A#getVarsta <em>Varsta</em>}</li>
+ *   <li>{@link nUMERGEFRATE.A#getB <em>B</em>}</li>
+ *   <li>{@link nUMERGEFRATE.A#getC <em>C</em>}</li>
+ * </ul>
+ *
+ * @see nUMERGEFRATE.NUMERGEFRATEPackage#getA()
+ * @model
+ * @generated
+ */
+public interface A extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Nume</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Nume</em>' attribute.
+	 * @see #setNume(String)
+	 * @see nUMERGEFRATE.NUMERGEFRATEPackage#getA_Nume()
+	 * @model
+	 * @generated
+	 */
+	String getNume();
+
+	/**
+	 * Sets the value of the '{@link nUMERGEFRATE.A#getNume <em>Nume</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Nume</em>' attribute.
+	 * @see #getNume()
+	 * @generated
+	 */
+	void setNume(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Varsta</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Varsta</em>' attribute.
+	 * @see #setVarsta(int)
+	 * @see nUMERGEFRATE.NUMERGEFRATEPackage#getA_Varsta()
+	 * @model
+	 * @generated
+	 */
+	int getVarsta();
+
+	/**
+	 * Sets the value of the '{@link nUMERGEFRATE.A#getVarsta <em>Varsta</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Varsta</em>' attribute.
+	 * @see #getVarsta()
+	 * @generated
+	 */
+	void setVarsta(int value);
+
+	/**
+	 * Returns the value of the '<em><b>B</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link nUMERGEFRATE.B#getA <em>A</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>B</em>' reference.
+	 * @see #setB(B)
+	 * @see nUMERGEFRATE.NUMERGEFRATEPackage#getA_B()
+	 * @see nUMERGEFRATE.B#getA
+	 * @model opposite="a"
+	 * @generated
+	 */
+	B getB();
+
+	/**
+	 * Sets the value of the '{@link nUMERGEFRATE.A#getB <em>B</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>B</em>' reference.
+	 * @see #getB()
+	 * @generated
+	 */
+	void setB(B value);
+
+	/**
+	 * Returns the value of the '<em><b>C</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link nUMERGEFRATE.C#getA <em>A</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>C</em>' reference.
+	 * @see #setC(C)
+	 * @see nUMERGEFRATE.NUMERGEFRATEPackage#getA_C()
+	 * @see nUMERGEFRATE.C#getA
+	 * @model opposite="a"
+	 * @generated
+	 */
+	C getC();
+
+	/**
+	 * Sets the value of the '{@link nUMERGEFRATE.A#getC <em>C</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>C</em>' reference.
+	 * @see #getC()
+	 * @generated
+	 */
+	void setC(C value);
+
+} // A

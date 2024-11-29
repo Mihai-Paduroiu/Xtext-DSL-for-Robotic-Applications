@@ -1,0 +1,441 @@
+/**
+ */
+package ROS2DataModelMM.impl;
+
+import ROS2DataModelMM.ROS2DataModelMMPackage;
+import ROS2DataModelMM.Subscriptions;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Subscriptions</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.impl.SubscriptionsImpl#getSubscription_name <em>Subscription name</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SubscriptionsImpl#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SubscriptionsImpl#getNode_handle <em>Node handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SubscriptionsImpl#getDepth <em>Depth</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SubscriptionsImpl#getRmw_handle <em>Rmw handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.impl.SubscriptionsImpl#getPublisher_handle <em>Publisher handle</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class SubscriptionsImpl extends MinimalEObjectImpl.Container implements Subscriptions {
+	/**
+	 * The default value of the '{@link #getSubscription_name() <em>Subscription name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubscription_name()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SUBSCRIPTION_NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getSubscription_name() <em>Subscription name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubscription_name()
+	 * @generated
+	 * @ordered
+	 */
+	protected String subscription_name = SUBSCRIPTION_NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double TIMESTAMP_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getTimestamp() <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTimestamp()
+	 * @generated
+	 * @ordered
+	 */
+	protected double timestamp = TIMESTAMP_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getNode_handle() <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNode_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double NODE_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getNode_handle() <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNode_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double node_handle = NODE_HANDLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDepth() <em>Depth</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDepth()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int DEPTH_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getDepth() <em>Depth</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDepth()
+	 * @generated
+	 * @ordered
+	 */
+	protected int depth = DEPTH_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getRmw_handle() <em>Rmw handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRmw_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double RMW_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getRmw_handle() <em>Rmw handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRmw_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double rmw_handle = RMW_HANDLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPublisher_handle() <em>Publisher handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPublisher_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double PUBLISHER_HANDLE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getPublisher_handle() <em>Publisher handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPublisher_handle()
+	 * @generated
+	 * @ordered
+	 */
+	protected double publisher_handle = PUBLISHER_HANDLE_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SubscriptionsImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ROS2DataModelMMPackage.Literals.SUBSCRIPTIONS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getSubscription_name() {
+		return subscription_name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSubscription_name(String newSubscription_name) {
+		String oldSubscription_name = subscription_name;
+		subscription_name = newSubscription_name;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					ROS2DataModelMMPackage.SUBSCRIPTIONS__SUBSCRIPTION_NAME, oldSubscription_name, subscription_name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getTimestamp() {
+		return timestamp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTimestamp(double newTimestamp) {
+		double oldTimestamp = timestamp;
+		timestamp = newTimestamp;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.SUBSCRIPTIONS__TIMESTAMP,
+					oldTimestamp, timestamp));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getNode_handle() {
+		return node_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNode_handle(double newNode_handle) {
+		double oldNode_handle = node_handle;
+		node_handle = newNode_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.SUBSCRIPTIONS__NODE_HANDLE,
+					oldNode_handle, node_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getDepth() {
+		return depth;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDepth(int newDepth) {
+		int oldDepth = depth;
+		depth = newDepth;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.SUBSCRIPTIONS__DEPTH, oldDepth,
+					depth));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getRmw_handle() {
+		return rmw_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRmw_handle(double newRmw_handle) {
+		double oldRmw_handle = rmw_handle;
+		rmw_handle = newRmw_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ROS2DataModelMMPackage.SUBSCRIPTIONS__RMW_HANDLE,
+					oldRmw_handle, rmw_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public double getPublisher_handle() {
+		return publisher_handle;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPublisher_handle(double newPublisher_handle) {
+		double oldPublisher_handle = publisher_handle;
+		publisher_handle = newPublisher_handle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					ROS2DataModelMMPackage.SUBSCRIPTIONS__PUBLISHER_HANDLE, oldPublisher_handle, publisher_handle));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__SUBSCRIPTION_NAME:
+			return getSubscription_name();
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__TIMESTAMP:
+			return getTimestamp();
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__NODE_HANDLE:
+			return getNode_handle();
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__DEPTH:
+			return getDepth();
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__RMW_HANDLE:
+			return getRmw_handle();
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__PUBLISHER_HANDLE:
+			return getPublisher_handle();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__SUBSCRIPTION_NAME:
+			setSubscription_name((String) newValue);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__TIMESTAMP:
+			setTimestamp((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__NODE_HANDLE:
+			setNode_handle((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__DEPTH:
+			setDepth((Integer) newValue);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__RMW_HANDLE:
+			setRmw_handle((Double) newValue);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__PUBLISHER_HANDLE:
+			setPublisher_handle((Double) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__SUBSCRIPTION_NAME:
+			setSubscription_name(SUBSCRIPTION_NAME_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__TIMESTAMP:
+			setTimestamp(TIMESTAMP_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__NODE_HANDLE:
+			setNode_handle(NODE_HANDLE_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__DEPTH:
+			setDepth(DEPTH_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__RMW_HANDLE:
+			setRmw_handle(RMW_HANDLE_EDEFAULT);
+			return;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__PUBLISHER_HANDLE:
+			setPublisher_handle(PUBLISHER_HANDLE_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__SUBSCRIPTION_NAME:
+			return SUBSCRIPTION_NAME_EDEFAULT == null ? subscription_name != null
+					: !SUBSCRIPTION_NAME_EDEFAULT.equals(subscription_name);
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__TIMESTAMP:
+			return timestamp != TIMESTAMP_EDEFAULT;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__NODE_HANDLE:
+			return node_handle != NODE_HANDLE_EDEFAULT;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__DEPTH:
+			return depth != DEPTH_EDEFAULT;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__RMW_HANDLE:
+			return rmw_handle != RMW_HANDLE_EDEFAULT;
+		case ROS2DataModelMMPackage.SUBSCRIPTIONS__PUBLISHER_HANDLE:
+			return publisher_handle != PUBLISHER_HANDLE_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (subscription_name: ");
+		result.append(subscription_name);
+		result.append(", timestamp: ");
+		result.append(timestamp);
+		result.append(", node_handle: ");
+		result.append(node_handle);
+		result.append(", depth: ");
+		result.append(depth);
+		result.append(", rmw_handle: ");
+		result.append(rmw_handle);
+		result.append(", publisher_handle: ");
+		result.append(publisher_handle);
+		result.append(')');
+		return result.toString();
+	}
+
+} //SubscriptionsImpl

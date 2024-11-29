@@ -1,0 +1,138 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Nodes</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.Nodes#getNode_handle <em>Node handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Nodes#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Nodes#getTid <em>Tid</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Nodes#getRmw_handle <em>Rmw handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Nodes#getName <em>Name</em>}</li>
+ * </ul>
+ *
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage#getNodes()
+ * @model
+ * @generated
+ */
+public interface Nodes extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Node handle</em>' attribute.
+	 * @see #setNode_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getNodes_Node_handle()
+	 * @model
+	 * @generated
+	 */
+	double getNode_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Nodes#getNode_handle <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Node handle</em>' attribute.
+	 * @see #getNode_handle()
+	 * @generated
+	 */
+	void setNode_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timestamp</em>' attribute.
+	 * @see #setTimestamp(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getNodes_Timestamp()
+	 * @model
+	 * @generated
+	 */
+	String getTimestamp();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Nodes#getTimestamp <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timestamp</em>' attribute.
+	 * @see #getTimestamp()
+	 * @generated
+	 */
+	void setTimestamp(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Tid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tid</em>' attribute.
+	 * @see #setTid(int)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getNodes_Tid()
+	 * @model
+	 * @generated
+	 */
+	int getTid();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Nodes#getTid <em>Tid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tid</em>' attribute.
+	 * @see #getTid()
+	 * @generated
+	 */
+	void setTid(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Rmw handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rmw handle</em>' attribute.
+	 * @see #setRmw_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getNodes_Rmw_handle()
+	 * @model
+	 * @generated
+	 */
+	double getRmw_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Nodes#getRmw_handle <em>Rmw handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rmw handle</em>' attribute.
+	 * @see #getRmw_handle()
+	 * @generated
+	 */
+	void setRmw_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getNodes_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Nodes#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+} // Nodes

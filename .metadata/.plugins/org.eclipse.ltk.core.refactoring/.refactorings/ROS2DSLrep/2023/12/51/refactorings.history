@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;model&apos; to &apos;ROS2DSLrep&apos;" description="Move &apos;model&apos; to &apos;ROS2DSLrep&apos;" destination="/ROS2DSLrep" element1="/OriginalMetaModel/model" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1703102009083" updateReferences="true"/>
+</session>

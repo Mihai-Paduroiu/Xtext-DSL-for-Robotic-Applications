@@ -1,0 +1,92 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Callback objects</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.Callback_objects#getReference <em>Reference</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Callback_objects#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.Callback_objects#getCallback_object <em>Callback object</em>}</li>
+ * </ul>
+ *
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage#getCallback_objects()
+ * @model
+ * @generated
+ */
+public interface Callback_objects extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Reference</em>' attribute.
+	 * @see #setReference(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getCallback_objects_Reference()
+	 * @model
+	 * @generated
+	 */
+	double getReference();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Callback_objects#getReference <em>Reference</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Reference</em>' attribute.
+	 * @see #getReference()
+	 * @generated
+	 */
+	void setReference(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timestamp</em>' attribute.
+	 * @see #setTimestamp(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getCallback_objects_Timestamp()
+	 * @model
+	 * @generated
+	 */
+	String getTimestamp();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Callback_objects#getTimestamp <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timestamp</em>' attribute.
+	 * @see #getTimestamp()
+	 * @generated
+	 */
+	void setTimestamp(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Callback object</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Callback object</em>' attribute.
+	 * @see #setCallback_object(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getCallback_objects_Callback_object()
+	 * @model
+	 * @generated
+	 */
+	double getCallback_object();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.Callback_objects#getCallback_object <em>Callback object</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Callback object</em>' attribute.
+	 * @see #getCallback_object()
+	 * @generated
+	 */
+	void setCallback_object(double value);
+
+} // Callback_objects

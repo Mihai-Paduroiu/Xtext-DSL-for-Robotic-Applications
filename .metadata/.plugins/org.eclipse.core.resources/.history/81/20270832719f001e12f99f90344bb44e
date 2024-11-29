@@ -1,0 +1,390 @@
+/**
+ */
+package nUMERGEFRATE.impl;
+
+import java.util.Collection;
+
+import nUMERGEFRATE.A;
+import nUMERGEFRATE.B;
+import nUMERGEFRATE.D;
+import nUMERGEFRATE.NUMERGEFRATEPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>B</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link nUMERGEFRATE.impl.BImpl#getNume <em>Nume</em>}</li>
+ *   <li>{@link nUMERGEFRATE.impl.BImpl#getVarsta <em>Varsta</em>}</li>
+ *   <li>{@link nUMERGEFRATE.impl.BImpl#getA <em>A</em>}</li>
+ *   <li>{@link nUMERGEFRATE.impl.BImpl#getD <em>D</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class BImpl extends MinimalEObjectImpl.Container implements B {
+	/**
+	 * The default value of the '{@link #getNume() <em>Nume</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNume()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NUME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getNume() <em>Nume</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNume()
+	 * @generated
+	 * @ordered
+	 */
+	protected String nume = NUME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getVarsta() <em>Varsta</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVarsta()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int VARSTA_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getVarsta() <em>Varsta</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVarsta()
+	 * @generated
+	 * @ordered
+	 */
+	protected int varsta = VARSTA_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getA() <em>A</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getA()
+	 * @generated
+	 * @ordered
+	 */
+	protected A a;
+
+	/**
+	 * The cached value of the '{@link #getD() <em>D</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getD()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<D> d;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected BImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return NUMERGEFRATEPackage.Literals.B;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getNume() {
+		return nume;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setNume(String newNume) {
+		String oldNume = nume;
+		nume = newNume;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, NUMERGEFRATEPackage.B__NUME, oldNume, nume));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int getVarsta() {
+		return varsta;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setVarsta(int newVarsta) {
+		int oldVarsta = varsta;
+		varsta = newVarsta;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, NUMERGEFRATEPackage.B__VARSTA, oldVarsta, varsta));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public A getA() {
+		if (a != null && a.eIsProxy()) {
+			InternalEObject oldA = (InternalEObject) a;
+			a = (A) eResolveProxy(oldA);
+			if (a != oldA) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, NUMERGEFRATEPackage.B__A, oldA, a));
+			}
+		}
+		return a;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public A basicGetA() {
+		return a;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetA(A newA, NotificationChain msgs) {
+		A oldA = a;
+		a = newA;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, NUMERGEFRATEPackage.B__A,
+					oldA, newA);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setA(A newA) {
+		if (newA != a) {
+			NotificationChain msgs = null;
+			if (a != null)
+				msgs = ((InternalEObject) a).eInverseRemove(this, NUMERGEFRATEPackage.A__B, A.class, msgs);
+			if (newA != null)
+				msgs = ((InternalEObject) newA).eInverseAdd(this, NUMERGEFRATEPackage.A__B, A.class, msgs);
+			msgs = basicSetA(newA, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, NUMERGEFRATEPackage.B__A, newA, newA));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<D> getD() {
+		if (d == null) {
+			d = new EObjectContainmentEList<D>(D.class, this, NUMERGEFRATEPackage.B__D);
+		}
+		return d;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case NUMERGEFRATEPackage.B__A:
+			if (a != null)
+				msgs = ((InternalEObject) a).eInverseRemove(this, NUMERGEFRATEPackage.A__B, A.class, msgs);
+			return basicSetA((A) otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case NUMERGEFRATEPackage.B__A:
+			return basicSetA(null, msgs);
+		case NUMERGEFRATEPackage.B__D:
+			return ((InternalEList<?>) getD()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case NUMERGEFRATEPackage.B__NUME:
+			return getNume();
+		case NUMERGEFRATEPackage.B__VARSTA:
+			return getVarsta();
+		case NUMERGEFRATEPackage.B__A:
+			if (resolve)
+				return getA();
+			return basicGetA();
+		case NUMERGEFRATEPackage.B__D:
+			return getD();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case NUMERGEFRATEPackage.B__NUME:
+			setNume((String) newValue);
+			return;
+		case NUMERGEFRATEPackage.B__VARSTA:
+			setVarsta((Integer) newValue);
+			return;
+		case NUMERGEFRATEPackage.B__A:
+			setA((A) newValue);
+			return;
+		case NUMERGEFRATEPackage.B__D:
+			getD().clear();
+			getD().addAll((Collection<? extends D>) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case NUMERGEFRATEPackage.B__NUME:
+			setNume(NUME_EDEFAULT);
+			return;
+		case NUMERGEFRATEPackage.B__VARSTA:
+			setVarsta(VARSTA_EDEFAULT);
+			return;
+		case NUMERGEFRATEPackage.B__A:
+			setA((A) null);
+			return;
+		case NUMERGEFRATEPackage.B__D:
+			getD().clear();
+			return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case NUMERGEFRATEPackage.B__NUME:
+			return NUME_EDEFAULT == null ? nume != null : !NUME_EDEFAULT.equals(nume);
+		case NUMERGEFRATEPackage.B__VARSTA:
+			return varsta != VARSTA_EDEFAULT;
+		case NUMERGEFRATEPackage.B__A:
+			return a != null;
+		case NUMERGEFRATEPackage.B__D:
+			return d != null && !d.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (Nume: ");
+		result.append(nume);
+		result.append(", Varsta: ");
+		result.append(varsta);
+		result.append(')');
+		return result.toString();
+	}
+
+} //BImpl

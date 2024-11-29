@@ -1,0 +1,92 @@
+/**
+ */
+package ROS2DataModelMM;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Timer Node links</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link ROS2DataModelMM.TimerNode_links#getTimer_handle <em>Timer handle</em>}</li>
+ *   <li>{@link ROS2DataModelMM.TimerNode_links#getTimestamp <em>Timestamp</em>}</li>
+ *   <li>{@link ROS2DataModelMM.TimerNode_links#getNode_handle <em>Node handle</em>}</li>
+ * </ul>
+ *
+ * @see ROS2DataModelMM.ROS2DataModelMMPackage#getTimerNode_links()
+ * @model
+ * @generated
+ */
+public interface TimerNode_links extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Timer handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timer handle</em>' attribute.
+	 * @see #setTimer_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getTimerNode_links_Timer_handle()
+	 * @model
+	 * @generated
+	 */
+	double getTimer_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.TimerNode_links#getTimer_handle <em>Timer handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timer handle</em>' attribute.
+	 * @see #getTimer_handle()
+	 * @generated
+	 */
+	void setTimer_handle(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Timestamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Timestamp</em>' attribute.
+	 * @see #setTimestamp(String)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getTimerNode_links_Timestamp()
+	 * @model
+	 * @generated
+	 */
+	String getTimestamp();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.TimerNode_links#getTimestamp <em>Timestamp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Timestamp</em>' attribute.
+	 * @see #getTimestamp()
+	 * @generated
+	 */
+	void setTimestamp(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Node handle</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Node handle</em>' attribute.
+	 * @see #setNode_handle(double)
+	 * @see ROS2DataModelMM.ROS2DataModelMMPackage#getTimerNode_links_Node_handle()
+	 * @model
+	 * @generated
+	 */
+	double getNode_handle();
+
+	/**
+	 * Sets the value of the '{@link ROS2DataModelMM.TimerNode_links#getNode_handle <em>Node handle</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Node handle</em>' attribute.
+	 * @see #getNode_handle()
+	 * @generated
+	 */
+	void setNode_handle(double value);
+
+} // TimerNode_links

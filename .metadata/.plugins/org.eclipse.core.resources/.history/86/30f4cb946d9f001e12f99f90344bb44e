@@ -1,0 +1,71 @@
+/**
+ */
+package secundproiectEcore;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Writer</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link secundproiectEcore.Writer#getName <em>Name</em>}</li>
+ *   <li>{@link secundproiectEcore.Writer#getBook <em>Book</em>}</li>
+ * </ul>
+ *
+ * @see secundproiectEcore.SecundproiectEcorePackage#getWriter()
+ * @model
+ * @generated
+ */
+public interface Writer extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see secundproiectEcore.SecundproiectEcorePackage#getWriter_Name()
+	 * @model required="true"
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link secundproiectEcore.Writer#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Book</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link secundproiectEcore.Book#getAuthor <em>Author</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Book</em>' reference.
+	 * @see #setBook(Book)
+	 * @see secundproiectEcore.SecundproiectEcorePackage#getWriter_Book()
+	 * @see secundproiectEcore.Book#getAuthor
+	 * @model opposite="author"
+	 * @generated
+	 */
+	Book getBook();
+
+	/**
+	 * Sets the value of the '{@link secundproiectEcore.Writer#getBook <em>Book</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Book</em>' reference.
+	 * @see #getBook()
+	 * @generated
+	 */
+	void setBook(Book value);
+
+} // Writer
